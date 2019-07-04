@@ -28,16 +28,17 @@ node_modules/
 # ======================================== #
 /*
 !.gitignore
+!README.md
 !plugins/
 !themes/
 !uploads/
-!README.md
+!db/
 
 plugins/*
 !plugins/inhabitent-someplugin/
 
 themes/*
 !themes/tent/
-themes/tent/node_modules
+themes/tent/node_modules/
 
-uploads/wp-migrate-db
+uploads/wp-migrate-db/
