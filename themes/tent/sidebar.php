@@ -1,8 +1,8 @@
 <?php
 /**
- * The sidebar containing the main widget area.s
+ * Sidebar w/ main widget areas
  *
- * @package RED_Starter_Theme
+ * @package tent
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

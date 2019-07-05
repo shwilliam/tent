@@ -1,8 +1,8 @@
 <?php
 /**
- * Template part for displaying page content in page.php.
+ * Page content template
  *
- * @package RED_Starter_Theme
+ * @package tent
  */
 
 ?>

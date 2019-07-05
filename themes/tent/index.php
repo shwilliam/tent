@@ -1,8 +1,8 @@
 <?php
 /**
- * The main template file.
+ * Main and fallback template
  *
- * @package RED_Starter_Theme
+ * @package tent
  */
 
 get_header(); ?>

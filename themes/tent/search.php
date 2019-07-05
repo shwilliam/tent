@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying search results pages.
+ * Search results page template
  *
- * @package RED_Starter_Theme
+ * @package tent
  */
 
 get_header(); ?>
@@ -23,7 +23,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php red_starter_numbered_pagination(); ?>
+			<?php tent_numbered_pagination(); ?>
 
 		<?php else : ?>
 

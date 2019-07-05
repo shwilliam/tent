@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying the footer.
+ * Site footer
  *
- * @package RED_Starter_Theme
+ * @package tent
  */
 
 ?>

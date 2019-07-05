@@ -1,8 +1,8 @@
 <?php
 /**
- * The header for our theme.
+ * Site header
  *
- * @package RED_Starter_Theme
+ * @package tent
  */
 
 ?><!DOCTYPE html>

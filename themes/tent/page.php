@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template for all pages
  *
- * @package RED_Starter_Theme
+ * @package tent
  */
 
 get_header(); ?>

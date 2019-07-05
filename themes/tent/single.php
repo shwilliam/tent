@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * Template for all single posts
  *
- * @package RED_Starter_Theme
+ * @package tent
  */
 
 get_header(); ?>

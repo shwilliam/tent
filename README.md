@@ -1,4 +1,4 @@
-# Inhabitent
+# Tent
 
 ## Installation
 

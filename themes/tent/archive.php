@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * Archive pages template
  *
- * @package RED_Starter_Theme
+ * @package tent
  */
 
 get_header(); ?>

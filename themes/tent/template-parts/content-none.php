@@ -1,8 +1,8 @@
 <?php
 /**
- * Template part for displaying a message that posts cannot be found.
+ * Template rendered when no posts found
  *
- * @package RED_Starter_Theme
+ * @package tent
  */
 
 ?>
