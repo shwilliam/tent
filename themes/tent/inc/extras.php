@@ -20,3 +20,20 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+function tent_login_logo() {
+  echo '<style type="text/css">
+    h1 a {
+      background-image:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-text-dark.svg) !important; 
+      background-repeat: no-repeat !important;
+      background-size: 100% 100px !important;
+      width: 100% !important;
+    }
+  </style>';
+}
+add_action('login_head', 'tent_login_logo');
+
+function the_url($url) {
+  return get_bloginfo('url');
+}
+add_filter('login_headerurl', 'the_url');
