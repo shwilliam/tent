@@ -22,7 +22,9 @@
   "prettier": {
     "singleQuote": true
   },
-  "scripts": {},
+  "scripts": {
+    "start": "gulp"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shwilliam/tent.git"
