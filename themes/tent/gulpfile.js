@@ -10,20 +10,13 @@ const sourcemaps = require('gulp-sourcemaps');
 const terser = require('gulp-terser');
 const babel = require('gulp-babel');
 
-// Create basic Gulp tasks
-
 gulp.task('sass', function() {
   return gulp
-    .src('./sass/style.scss', { sourcemaps: true })
+    .src('./sass/style.scss', {sourcemaps: true})
     .pipe(sourcemaps.init())
     .pipe(prettyError())
     .pipe(sass())
-    .pipe(
-      autoprefixer({
-        browsers: ['last 2 versions']
-      })
-    )
-    .pipe(gulp.dest('./'))
+    .pipe(autoprefixer({browsers: ['last 2 versions']}))
     .pipe(cssnano())
     .pipe(rename('style.min.css'))
     .pipe(sourcemaps.write('../maps'))
@@ -44,33 +37,23 @@ gulp.task(
   gulp.series('lint', function() {
     return gulp
       .src('./js/*.js')
-      .pipe(
-        babel({
-          presets: ['env']
-        })
-      )
+      .pipe(babel({presets: ['env']}))
       .pipe(terser())
-      .pipe(
-        rename({
-          extname: '.min.js'
-        })
-      )
+      .pipe(rename({extname: '.min.js'}))
       .pipe(gulp.dest('./build/js'));
-  })
+  }),
 );
-
-// Set-up BrowserSync and watch
 
 gulp.task('browser-sync', function() {
   const files = [
     './build/css/*.css',
     './build/js/*.js',
     './*.php',
-    './**/*.php'
+    './**/*.php',
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost/inhabitent'
+    proxy: 'localhost/inhabitent',
   });
 
   gulp.watch(files).on('change', browserSync.reload);
