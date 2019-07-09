@@ -9,11 +9,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
+		<?php if (has_post_thumbnail()) : ?>
+			<?php the_post_thumbnail('large'); ?>
 		<?php endif; ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title('<h2 class="entry-title">', '</h2>'); ?>
 
 		<div class="entry-meta">
 			<?php tent_posted_on(); ?> / <?php tent_comment_count(); ?> / <?php tent_posted_by(); ?>
@@ -23,10 +23,10 @@
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+			wp_link_pages(array(
+				'before' => '<div class="page-links">' . esc_html('Pages:'),
 				'after'  => '</div>',
-			) );
+			));
 		?>
 	</div><!-- .entry-content -->
 

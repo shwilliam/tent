@@ -1,0 +1,16 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+.entry-header {
+  position: relative;
+}
+
+.entry-header__title {
+  position: absolute;
+  top: $base__space-unit;
+}
+
+.updated:not(.published) {
+  display: none;
+}

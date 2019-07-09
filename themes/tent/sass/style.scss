@@ -18,22 +18,9 @@ Tags:
 # Typography
 # Elements
 # Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Asides
-	## Comments
+# Modules 
 # Media
-	## Captions
-	## Galleries
-# Page Templates
-	## Front page
+# Templates
 --------------------------------------------------------------*/
 
 @import 'variables';
@@ -44,9 +31,11 @@ Tags:
 @import 'typography';
 @import 'elements';
 @import 'forms';
-@import 'navigation';
 @import 'modules';
-@import 'widgets';
-@import 'content';
 @import 'media';
-@import 'page-templates';
+
+@import 'templates/_index';
+@import 'templates/_header';
+@import 'templates/_content';
+@import 'templates/_sidebar';
+@import 'templates/_comments';

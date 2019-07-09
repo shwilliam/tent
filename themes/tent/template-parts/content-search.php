@@ -13,7 +13,7 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php tent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php tent_posted_by(); ?>
+			<?php tent_posted_on(); ?> / <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?> / <?php tent_posted_by(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->

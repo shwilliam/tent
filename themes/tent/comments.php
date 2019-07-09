@@ -15,22 +15,24 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
+<div id="comments" class="comments">
 
 	<?php // You can start editing here -- including this comment! ?>
 
-	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title">
-			<?php esc_html( comments_number( '0 Comments', '1 Comment', '% Comments' ) ); ?>
+	<?php if (have_comments()) : ?>
+		<h2 class="comments__title">
+			<?php esc_html(comments_number('0 Comments', '1 Comment', '% Comments')); ?>
 		</h2>
 
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
+		<?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : ?>
 		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php esc_html( 'Comment navigation' ); ?></h2>
+			<h2 class="screen-reader-text">
+				<?php esc_html('Comment navigation'); ?>
+			</h2>
 			<div class="nav-links">
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html( 'Older Comments' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html( 'Newer Comments' ) ); ?></div>
+				<div class="nav-previous"><?php previous_comments_link(esc_html('Older Comments')); ?></div>
+				<div class="nav-next"><?php next_comments_link(esc_html('Newer Comments')); ?></div>
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-above -->
@@ -38,19 +40,23 @@ if ( post_password_required() ) {
 
 		<ol class="comment-list">
 			<?php
-				wp_list_comments( array(
+				wp_list_comments(array(
 					'callback' => 'tent_comment_list'
-				) );
+				));
 			?>
 		</ol><!-- .comment-list -->
 
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
+		<?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : ?>
 		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php esc_html( 'Comment navigation' ); ?></h2>
+			<h2 class="screen-reader-text"><?php esc_html('Comment navigation'); ?></h2>
 			<div class="nav-links">
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html( 'Older Comments' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html( 'Newer Comments' ) ); ?></div>
+				<div class="nav-previous">
+					<?php previous_comments_link(esc_html('Older Comments')); ?>
+				</div>
+				<div class="nav-next">
+					<?php next_comments_link(esc_html('Newer Comments')); ?>
+				</div>
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-below -->
@@ -60,16 +66,16 @@ if ( post_password_required() ) {
 
 	<?php
 		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
+		if ( !comments_open() && get_comments_number() && post_type_supports(get_post_type(), 'comments')) :
 	?>
-		<p class="no-comments"><?php esc_html( 'Comments are closed.' ); ?></p>
+		<p class="no-comments"><?php esc_html('Comments are closed.'); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form( array(
+	<?php comment_form(array(
 		'title_reply'          => esc_html( 'Post a Comment' ),
 		'comment_notes_before' => wp_kses( '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>', array( 'p' => array( 'class' => '' ) ) ),
 		'label_submit'         => esc_html( 'Submit' ),
 		'cancel_reply_link'    => esc_html( '[Cancel reply]' )
-	) ); ?>
+	)); ?>
 
 </div><!-- #comments -->

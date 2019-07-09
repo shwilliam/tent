@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-# Navigation
+# Header 
 --------------------------------------------------------------*/
 
 .site-header__nav {
@@ -25,9 +25,7 @@
     text-decoration: none;
   }
 
-  .current_page_item > a,
-  .current-menu-item > a,
-  .current_page_ancestor > a {
+  .current_page_item > a {
     text-decoration: underline;
   }
 
@@ -59,25 +57,5 @@
   }
   .site-header__nav ul {
     display: unset;
-  }
-}
-
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-  .site-main & {
-    margin: 0 0 $base__space-unit;
-    overflow: hidden;
-  }
-
-  .nav-previous {
-    float: left;
-    width: 50%;
-  }
-
-  .nav-next {
-    float: right;
-    text-align: right;
-    width: 50%;
   }
 }
