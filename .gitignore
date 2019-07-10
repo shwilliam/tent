@@ -9,6 +9,7 @@
 
 plugins/*
 !plugins/tent-functionality/
+!plugins/tent-blocks/
 
 themes/*
 !themes/tent/
