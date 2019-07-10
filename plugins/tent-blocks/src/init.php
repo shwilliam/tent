@@ -22,8 +22,7 @@ function tent_blocks_block_assets() {
 	// styles
 	wp_enqueue_style(
 		'tent-blocks-style-css',
-		plugins_url( 'dist/blocks.style.build.css', dirname( __FILE__ ) ), 
-    array( 'wp-editor' )
+		plugins_url( 'dist/blocks.style.build.css', dirname( __FILE__ ) ) 
 	);
 }
 
