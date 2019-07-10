@@ -54,6 +54,14 @@ function tent_cpt_product() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
+    'show_in_rest'          => true,
+    'template_lock'         => 'all',
+    'template'              => array(array(
+      'core/paragraph', array(
+        'placeholder' => 'Describe product...',
+      ),
+    )),
+
 	);
 
   register_post_type('product', $args);
