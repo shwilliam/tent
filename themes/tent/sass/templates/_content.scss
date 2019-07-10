@@ -4,11 +4,33 @@
 
 .entry-header {
   position: relative;
+  width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .entry-header__title {
   position: absolute;
   top: $base__space-unit;
+  width: 70%;
+  background-color: $color__brand;
+
+  a {
+    color: $color__background-body;
+    text-decoration: none;
+  }
+}
+
+.entry-meta {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: $color__brand;
+  color: $color__background-body;
 }
 
 .updated:not(.published) {
