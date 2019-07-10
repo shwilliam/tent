@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
+	<div id="primary">
 		<main id="main" class="site-content__main" role="main">
 
       <?php while (have_posts()) : the_post(); ?>

@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
+	<div id="primary">
 		<main id="main" class="site-content__main" role="main">
 
 			<section class="error-404 not-found">

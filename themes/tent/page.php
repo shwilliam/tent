@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
+  <div id="primary">
 		<main id="main" class="site-content__main" role="main">
 
 			<?php while (have_posts()) : the_post(); ?>
@@ -19,5 +19,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php if (!is_front_page()) : get_sidebar(); endif; ?>
 <?php get_footer(); ?>

@@ -2,6 +2,21 @@
 # Header 
 --------------------------------------------------------------*/
 
+.site-header--above {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .site-header__nav {
+    border-bottom: none;
+
+    a {
+      color: $color__background-body;
+    }
+  }
+}
+
 .site-header__nav {
   @include border-bottom;
 
@@ -10,6 +25,7 @@
   justify-content: space-between;
   align-items: center;
   line-height: $base__space-unit;
+  z-index: 9999;
 
   ul {
     @include reset-list;
@@ -23,6 +39,7 @@
 
   a {
     text-decoration: none;
+    color: $color__brand;
   }
 
   .current_page_item > a {

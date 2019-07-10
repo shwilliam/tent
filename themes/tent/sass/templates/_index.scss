@@ -5,4 +5,13 @@
 .site-content {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+
+  & > * {
+    flex-grow: 1;
+  }
+}
+
+.site-content__main {
+  flex-grow: 1;
 }

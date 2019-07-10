@@ -22,16 +22,33 @@
         <?php echo esc_html('Skip to content'); ?>
       </a>
 
-			<header id="masthead" class="site-header" role="banner">
+      <header
+        id="masthead"
+        role="banner"
+        class="site-header <?php
+          if (has_block('tent/hero-image-header'))
+            : echo 'site-header--above';
+          endif;
+        ?>"
+      >
 				<nav id="site-navigation" class="site-header__nav" role="navigation">
-          <a title="Home" rel="home" href="<?php echo esc_url(home_url('/')); ?>" class="site-header__link">
+          <a
+            title="Home"
+            rel="home"
+            href="<?php echo esc_url(home_url('/')); ?>"
+            class="site-header__link"
+          >
             <h1 class="site-header__title">
               <?php bloginfo('name'); ?>
             </h1>
             <img
-              class="site-header__logo"
-              src="<?= get_stylesheet_directory_uri().'/images/inhabitent-logo-tent.svg'; ?>"
               alt=""
+              class="site-header__logo"
+              src="<?=
+                has_block('tent/hero-image-header')
+                  ? get_stylesheet_directory_uri().'/images/inhabitent-logo-tent-white.svg'
+                  : get_stylesheet_directory_uri().'/images/inhabitent-logo-tent.svg';
+              ?>"
             />
           </a>
           <button
