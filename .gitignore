@@ -7,7 +7,7 @@
 !db/
 
 plugins/*
-# !plugins/tent-someplugin/
+!plugins/tent-functionality/
 
 themes/*
 !themes/tent/
