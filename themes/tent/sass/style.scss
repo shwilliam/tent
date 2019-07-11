@@ -23,19 +23,20 @@ Tags:
 # Templates
 --------------------------------------------------------------*/
 
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
-@import 'normalize';
-@import 'fonts';
-@import 'typography';
-@import 'elements';
-@import 'forms';
-@import 'modules';
-@import 'media';
+@import "normalize";
+@import "fonts";
+@import "typography";
+@import "elements";
+@import "forms";
+@import "modules";
+@import "media";
 
-@import 'templates/_index';
-@import 'templates/_header';
-@import 'templates/_content';
-@import 'templates/_sidebar';
-@import 'templates/_comments';
+@import "templates/_index";
+@import "templates/_page";
+@import "templates/_header";
+@import "templates/_content";
+@import "templates/_sidebar";
+@import "templates/_comments";

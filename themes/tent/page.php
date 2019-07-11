@@ -19,5 +19,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php if (!is_front_page()) : get_sidebar(); endif; ?>
+<?php if (!has_block('tent/hero-image-header')) : get_sidebar(); endif; ?>
 <?php get_footer(); ?>

@@ -17,11 +17,17 @@ function tent_blocks_cgb_hero_image_block_render($attributes) {
       align-items: center;
       justify-content: center;
     '>";
-    $markup .= '<h2 class="entry-title">';
+
+    $markup .= has_post_thumbnail()
+      ? '<h2 class="entry-title screen-reader-text">'
+      : '<h2 class="entry-title">';
     $markup .= esc_html($post->post_title);
     $markup .= '</h2>';
+    $markup .= has_post_thumbnail()
+      ? "<div class='entry-title__logo'>".get_the_post_thumbnail()."</div>"
+      :'';
     $markup .= '</header></div>';
-  
+
     return $markup;
   }
 }

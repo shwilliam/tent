@@ -8,7 +8,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <?php if (!is_front_page()) : ?>
+
+  <?php if (!has_block('tent/hero-image-header')) : ?>
     <header class="entry-header">
       <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
     </header><!-- .entry-header -->
