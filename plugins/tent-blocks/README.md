@@ -1,4 +1,4 @@
-# Tent blocks
+# Tent blocks (a fork of [`@redacademy/inhabitent-blocks`](https://github.com/redacademy/inhabitent-blocks))
 
 > Custom blocks for the tent theme and plugin collection
 
