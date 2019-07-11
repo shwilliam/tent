@@ -1,6 +1,6 @@
 <?php
 /**
- * Contact page template page fallback
+ * Template for front-page 
  *
  * @package tent
  */

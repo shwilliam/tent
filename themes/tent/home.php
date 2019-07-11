@@ -1,6 +1,6 @@
 <?php
 /**
- * Fallback template
+ * Front-page and journal index template
  *
  * @package tent
  */
@@ -12,11 +12,13 @@ get_header(); ?>
 
       <?php if (have_posts()) : ?>
 
-        <header>
-          <h2 class="page-title screen-reader-text">
-            <?php single_post_title(); ?>
-          </h2>
-        </header>
+        <?php if (is_home() && !is_front_page()) : ?>
+          <header>
+            <h2 class="page-title screen-reader-text">
+              <?php single_post_title(); ?>
+            </h2>
+          </header>
+        <?php endif; ?>
 
         <?php /* Start the Loop */ ?>
         <?php while (have_posts()) : the_post(); ?>
