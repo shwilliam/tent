@@ -62,4 +62,11 @@
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
-			<div id="content" class="site-content">
+      <div
+        id="content"
+        class="site-content <?php
+          if (has_block('tent/hero-image-header'))
+            : echo 'site-content--splash';
+            endif;
+        ?>"
+      >

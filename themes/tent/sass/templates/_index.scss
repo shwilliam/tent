@@ -3,12 +3,22 @@
 --------------------------------------------------------------*/
 
 .site-content {
+  @include container;
+
   display: flex;
   justify-content: space-between;
   width: 100%;
 
   & > * {
     flex-grow: 1;
+  }
+}
+
+.site-content--splash {
+  max-width: unset;
+
+  *:not(:first-child) {
+    @include container;
   }
 }
 

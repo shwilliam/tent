@@ -6,3 +6,7 @@
   @include sr-only;
   @include sr-only--focusable;
 }
+
+.container {
+  @include container;
+}

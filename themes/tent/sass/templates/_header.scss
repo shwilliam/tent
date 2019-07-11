@@ -2,6 +2,10 @@
 # Header 
 --------------------------------------------------------------*/
 
+.site-header {
+  @include container;
+}
+
 .site-header--above {
   position: absolute;
   top: 0;
