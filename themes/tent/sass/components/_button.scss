@@ -5,7 +5,11 @@
 @mixin button--green {
   background-color: $button--secondary;
   border-color: $button--secondary;
-  color: $color__background-body;
+
+  &,
+  &:visited {
+    color: $color__background-body;
+  }
 }
 
 .button {
@@ -17,6 +21,11 @@
   text-decoration: none;
   padding-left: 0.75 * $base__space-unit;
   padding-right: 0.75 * $base__space-unit;
+
+  &,
+  &:visited {
+    color: $button--primary;
+  }
 
   &:hover {
     @include button--green;

@@ -40,11 +40,16 @@
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
 
-    <a class="button" href="%s">
-      Read more
-      <span class="button__icon" role="img" aria-label="">
-        &#8594;
-      </span>
-    </a>
+    <?=
+      sprintf(
+        '<a class="button" href="%s">',
+        esc_url(get_permalink())
+      ).
+      'Read more
+        <span class="button__icon" role="img" aria-label="">
+          &#8594;
+        </span>
+      </a>';
+    ?>
 	</div>
 </article>
