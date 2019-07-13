@@ -13,6 +13,10 @@
   height: auto;
 }
 
+.entry-title--secondary {
+  color: $color__secondary;
+}
+
 .entry-title--float {
   position: absolute;
   top: $base__space-unit;

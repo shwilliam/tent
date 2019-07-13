@@ -21,7 +21,7 @@ get_header(); ?>
 					the_archive_title('<h2 class="page-title">', '</h2>');
 					the_archive_description('<div class="taxonomy-description">', '</div>');
 				?>
-			</header><!-- .page-header -->
+			</header>
 
       <section class="shop__grid">
 
@@ -41,8 +41,8 @@ get_header(); ?>
 
     <?php wp_reset_query(); ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

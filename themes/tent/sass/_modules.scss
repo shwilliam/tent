@@ -10,3 +10,11 @@
 .container {
   @include container;
 }
+
+.flex-split {
+  display: flex;
+
+  & > * {
+    width: 50%;
+  }
+}

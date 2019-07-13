@@ -7,7 +7,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('flex-split'); ?>>
 	<header class="entry-header">
 		<?php if (has_post_thumbnail()) : ?>
       <?php
@@ -17,15 +17,18 @@
         );
       ?>
 		<?php endif; ?>
-
-		<?php the_title('<h2 class="entry-title">', '</h2>'); ?>
 	</header>
 
 	<div class="entry-content">
+    <?php the_title('<h2 class="entry-title entry-title--secondary">', '</h2>'); ?>
+
+    $<?=
+      number_format(
+        get_post_custom()['price'][0], 
+        2
+      );  
+    ?>
+
 		<?php the_content(); ?>
 	</div>
-
-	<footer class="entry-footer">
-		<?php tent_entry_footer(); ?>
-	</footer>
 </article>

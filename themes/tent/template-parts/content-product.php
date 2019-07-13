@@ -24,13 +24,13 @@
     ?>
 
     <div class="entry-meta">
-      <?=
+      $<?=
         number_format(
           get_post_custom()['price'][0], 
           2
         );  
       ?>
-    </div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+    </div>
+	</header>
 
-</article><!-- #post-## -->
+</article>
