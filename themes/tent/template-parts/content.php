@@ -21,7 +21,7 @@
     <?php
       the_title(
         sprintf(
-          '<h2 class="entry-title entry-title--float"><a class="entry-title__link" href="%s" rel="bookmark">',
+          '<h2 class="entry-title entry-title--float"><a class="entry-title__link" href="%s">',
           esc_url(get_permalink())
         ),
         '</a></h2>'
@@ -39,5 +39,9 @@
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
+
+    <a class="button" href="%s">
+      Read more
+    </a>
 	</div>
 </article>

@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+# Button styles 
+--------------------------------------------------------------*/
+
+@mixin button--green {
+  background-color: $button--secondary;
+  border-color: $button--secondary;
+  color: $color__background-body;
+}
+
+.button {
+  border: 1px solid $button--primary;
+  color: $button--primary;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: $base__space-unit/2;
+
+  &:hover {
+    @include button--green;
+  }
+}
+
+.button--secondary {
+  @include button--green;
+
+  &:hover {
+    background-color: darken($button--secondary, 10%);
+  }
+}
