@@ -23,10 +23,11 @@ Tags:
 # Templates
 --------------------------------------------------------------*/
 
+@import "normalize";
+
 @import "variables";
 @import "mixins";
 
-@import "normalize";
 @import "fonts";
 @import "typography";
 @import "elements";
@@ -34,10 +35,9 @@ Tags:
 @import "modules";
 @import "media";
 
-@import "templates/_index";
-@import "templates/_page";
+@import "templates/_site";
 @import "templates/_header";
-@import "templates/_content";
 @import "templates/_sidebar";
-@import "templates/_comments";
-@import "templates/_archive-product";
+@import "templates/_post";
+@import "templates/_blog";
+@import "templates/_shop";

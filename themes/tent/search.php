@@ -8,12 +8,12 @@
 get_header(); ?>
 
 	<section id="primary">
-		<main id="main" class="site-content__main" role="main">
+		<main id="main" class="site__main" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
-				<header class="site-content__header">
-					<h2 class="site-content__title">
+				<header class="site__header">
+					<h2 class="site__title">
 						<?php
 							printf(
 							esc_html(
@@ -25,7 +25,6 @@ get_header(); ?>
 					</h2>
 				</header><!-- .page-header -->
 
-				<?php /* Start the Loop */ ?>
 				<?php while (have_posts()) : the_post(); ?>
 
 					<?php get_template_part('template-parts/content', 'search'); ?>

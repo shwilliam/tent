@@ -1,8 +1,8 @@
 /*--------------------------------------------------------------
-# Index.php
+# Site-wide styles 
 --------------------------------------------------------------*/
 
-.site-content {
+.site {
   @include container;
 
   display: flex;
@@ -14,14 +14,15 @@
   }
 }
 
-.site-content--splash {
+.site--splash {
   max-width: unset;
+  text-align: center;
 
   *:not(:first-child) {
     @include container;
   }
 }
 
-.site-content__main {
+.site__main {
   flex-grow: 1;
 }

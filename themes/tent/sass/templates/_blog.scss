@@ -1,38 +1,42 @@
 /*--------------------------------------------------------------
-# Content
+# Blog-related styles 
 --------------------------------------------------------------*/
 
-.entry-header {
+.entry-header--float {
   position: relative;
   width: 100%;
+}
 
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
+.entry-header__img--fill {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+// class appended in `header.php`
+.site--splash {
+  .entry-title {
+    color: $color__background-body;
   }
 }
 
-.entry-header__title {
+.entry-title--float {
   position: absolute;
   top: $base__space-unit;
   width: 70%;
   background-color: $color__brand;
 
+  &,
   a {
     color: $color__background-body;
     text-decoration: none;
   }
 }
 
-.entry-meta {
+.entry-meta--float {
   position: absolute;
   bottom: 0;
   right: 0;
   background-color: $color__brand;
   color: $color__background-body;
-}
-
-.updated:not(.published) {
-  display: none;
 }

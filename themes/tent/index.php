@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div id="primary">
-		<main id="main" class="site-content__main" role="main">
+		<main id="main" class="site__main" role="main">
 
       <?php if (have_posts()) : ?>
 
@@ -18,7 +18,6 @@ get_header(); ?>
           </h2>
         </header>
 
-        <?php /* Start the Loop */ ?>
         <?php while (have_posts()) : the_post(); ?>
 
           <?php get_template_part('template-parts/content'); ?>

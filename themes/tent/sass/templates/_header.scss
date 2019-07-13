@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-# Header 
+# Site header styles 
 --------------------------------------------------------------*/
 
 .site-header {
@@ -11,19 +11,9 @@
   top: 0;
   left: 0;
   right: 0;
-
-  .site-header__nav {
-    border-bottom: none;
-
-    a {
-      color: $color__background-body;
-    }
-  }
 }
 
 .site-header__nav {
-  @include border-bottom;
-
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -43,7 +33,7 @@
 
   a {
     text-decoration: none;
-    color: $color__brand;
+    color: $color__background-body;
   }
 
   .current_page_item > a {
@@ -54,6 +44,14 @@
   & > * * {
     padding: 0 0.5rem;
     text-transform: uppercase;
+  }
+}
+
+.site-header__nav--no-bg {
+  @include border-bottom;
+
+  a {
+    color: $color__brand;
   }
 }
 
@@ -76,6 +74,7 @@
   .site-header__nav--closed {
     display: none;
   }
+
   .site-header__nav ul {
     display: unset;
   }

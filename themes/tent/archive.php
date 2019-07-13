@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div id="primary">
-		<main id="main" class="site-content__main" role="main">
+		<main id="main" class="site__main" role="main">
 
 		<?php if (have_posts()) : ?>
 
@@ -19,7 +19,6 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
 			<?php while (have_posts()) : the_post(); ?>
 
 				<?php
