@@ -3,6 +3,8 @@ $base__space-unit: 1.5rem;
 $max-width: 1120px;
 
 // Colors
+$color__brand: #248a83;
+
 $color__background-body: #fff;
 $color__text-main: #404040;
 
@@ -14,11 +16,9 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
-
-$color__brand: #248a83;
+$color__link: $color__brand;
+$color__link-visited: darken($color__brand, 10%);
+$color__link-hover: darken($color__brand, 10%);
 
 // Components
 $button--primary: #000;
