@@ -21,6 +21,10 @@
   *:not(:first-child) {
     @include container;
   }
+
+  .entry-title {
+    color: $color__background-body;
+  }
 }
 
 .site__main {

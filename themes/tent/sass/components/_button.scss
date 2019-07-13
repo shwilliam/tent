@@ -9,11 +9,14 @@
 }
 
 .button {
+  padding: $base__space-unit/2;
+  font-size: 0.85rem;
   border: 1px solid $button--primary;
   color: $button--primary;
   text-transform: uppercase;
   text-decoration: none;
-  padding: $base__space-unit/2;
+  padding-left: 0.75 * $base__space-unit;
+  padding-right: 0.75 * $base__space-unit;
 
   &:hover {
     @include button--green;
@@ -26,4 +29,8 @@
   &:hover {
     background-color: darken($button--secondary, 10%);
   }
+}
+
+.button__icon {
+  font-size: 1.3rem;
 }

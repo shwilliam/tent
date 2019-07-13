@@ -13,17 +13,11 @@
   height: auto;
 }
 
-// class appended in `header.php`
-.site--splash {
-  .entry-title {
-    color: $color__background-body;
-  }
-}
-
 .entry-title--float {
   position: absolute;
   top: $base__space-unit;
   width: 70%;
+  padding: $base__space-unit/2;
   background-color: $color__brand;
 
   &,
@@ -33,10 +27,15 @@
   }
 }
 
+.entry-content {
+  margin-bottom: 2 * $base__space-unit;
+}
+
 .entry-meta--float {
   position: absolute;
   bottom: 0;
   right: 0;
+  padding: $base__space-unit/2;
   background-color: $color__brand;
   color: $color__background-body;
 }

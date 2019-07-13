@@ -42,6 +42,9 @@
 
     <a class="button" href="%s">
       Read more
+      <span class="button__icon" role="img" aria-label="">
+        &#8594;
+      </span>
     </a>
 	</div>
 </article>
