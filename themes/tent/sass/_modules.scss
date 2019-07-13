@@ -11,7 +11,7 @@
   @include container;
 }
 
-.flex-split {
+.flex--split {
   display: flex;
 
   & > * {

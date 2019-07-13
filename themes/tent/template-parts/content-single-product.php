@@ -7,7 +7,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('flex-split'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('flex--split'); ?>>
 	<header class="entry-header">
 		<?php if (has_post_thumbnail()) : ?>
       <?php

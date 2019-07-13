@@ -6,3 +6,38 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+
+.shop__item {
+  border: 1px solid $color__background-hr;
+  overflow: hidden;
+}
+
+.shop__item-img {
+  height: 250px;
+  max-width: none;
+  width: auto;
+}
+
+.shop__item-description {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.shop__item-title {
+  font-size: 1rem;
+  font-weight: initial;
+  margin: 0;
+  white-space: nowrap;
+
+  &:before {
+    content: ".................................................";
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.shop__item-title,
+.shop__item-price {
+  background-color: $color__background-body;
+}
