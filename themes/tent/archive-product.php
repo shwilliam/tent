@@ -7,8 +7,36 @@
 
 get_header(); ?>
 
-	<div id="primary">
+	<div id="primary" class="shop">
 		<main id="main" class="site__main" role="main">
+
+      <header class="page-header">
+        <?php
+          the_archive_title('<h2 class="page-title">', '</h2>');
+          $terms = get_terms(array(
+            'taxonomy' => 'product-type',
+          ));
+        ?>
+
+        <div class="shop__terms">
+          <?php
+            if ($terms) :
+              foreach ($terms as $term) :
+          ?>
+
+            <a href="<?= esc_url(get_term_link($term)); ?>">
+              <h2 class="entry-title">
+                <?= $term->name; ?>
+              </h2>
+            </a>
+
+          <?php
+              endforeach; 
+            endif;
+          ?>
+        </div>
+
+      </header>
 
       <?php
         $product_posts = get_posts(array(
@@ -18,13 +46,6 @@ get_header(); ?>
       ?>
 
         <?php if (have_posts()) : ?>
-
-          <header class="page-header">
-            <?php
-              the_archive_title('<h2 class="page-title">', '</h2>');
-              the_archive_description('<div class="taxonomy-description">', '</div>');
-            ?>
-          </header>
 
           <section class="shop__grid">
 
@@ -51,5 +72,4 @@ get_header(); ?>
 		</main>
 	</div>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
