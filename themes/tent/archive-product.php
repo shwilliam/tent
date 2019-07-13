@@ -10,6 +10,10 @@ get_header(); ?>
 	<div id="primary">
 		<main id="main" class="site__main" role="main">
 
+    <?php global $query_string;
+      $posts = query_posts($query_string.'&posts_per_page=16');
+    ?>
+
 		<?php if (have_posts()) : ?>
 
 			<header class="page-header">
@@ -34,6 +38,8 @@ get_header(); ?>
 			<?php get_template_part('template-parts/content', 'none'); ?>
 
 		<?php endif; ?>
+
+    <?php wp_reset_query(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
