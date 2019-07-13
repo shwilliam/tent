@@ -3,7 +3,7 @@
  *
  * @package   tent functionality
  * @author    William L <w-lindvall@outlook.com>
- * @license   GPL-2.0+
+ * @license   GPL-2.0
  * @copyright 2019 William L 
  *
  * @wordpress-plugin
@@ -11,7 +11,7 @@
  * Description: theme-independent functionality
  * Version:     0.1.0
  * Author:      William L 
- * License:     GPL-2.0+
+ * License:     GPL-2.0
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
