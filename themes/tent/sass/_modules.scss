@@ -11,6 +11,10 @@
   @include container;
 }
 
+.flex {
+  display: flex;
+}
+
 .flex--split {
   display: flex;
 
