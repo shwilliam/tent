@@ -19,9 +19,9 @@
 }
 
 .shop__item-description {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
 }
 
 .shop__item-title {
