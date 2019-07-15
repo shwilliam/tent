@@ -16,6 +16,8 @@
 .shop__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: $base__space-unit;
+  grid-row-gap: $base__space-unit;
 }
 
 .shop__item {
@@ -25,8 +27,7 @@
 
 .shop__item-img {
   height: 250px;
-  max-width: none;
-  width: auto;
+  object-fit: cover;
 }
 
 .shop__item-description {
