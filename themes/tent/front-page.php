@@ -14,6 +14,27 @@ get_header(); ?>
 				<?php get_template_part('template-parts/content', 'page'); ?>
 			<?php endwhile; ?>
 
+      <h2>Shop Stuff</h2>
+      <div class="flex">
+        <?php
+          $product_types_terms = get_terms(array(
+            'taxonomy' => 'product-type',
+            'count' => 4,
+          ));
+
+          foreach ($product_types_terms as $term) :
+            $term_name = $term->name;
+            $term_description = $term->description;
+            $term_url = get_term_link($term);
+          
+            // load template part in this scope
+            include(locate_template('template-parts/content-thumbnail-shop.php', false, false));
+          
+          endforeach;
+
+        ?>
+      </div>
+
       <h2>Inhabitent Journal</h2>
       <div class="flex">
         <?php
@@ -22,12 +43,10 @@ get_header(); ?>
             'posts_per_page' => 3,
           ));
 
-          foreach ( $blog_posts as $post ) : setup_postdata( $post );
-        ?>
+          foreach ($blog_posts as $post) : setup_postdata($post);
 
-          <?php get_template_part('template-parts/content', 'thumbnail'); ?>
+            get_template_part('template-parts/content', 'thumbnail-blog');
 
-        <?php
           endforeach; wp_reset_postdata();
         ?>
       </div>
