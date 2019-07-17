@@ -10,6 +10,6 @@
   }
 ?>
 
-<div id="secondary" class="sidebar" role="complementary">
+<div class="sidebar" role="complementary">
 	<?php dynamic_sidebar('sidebar-1'); ?>
-</div><!-- #secondary -->
+</div>

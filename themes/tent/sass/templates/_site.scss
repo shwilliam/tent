@@ -22,8 +22,81 @@
     @include container;
   }
 
-  .entry-title {
+  .page__title {
     color: $color__background-body;
+  }
+}
+
+.site__header {
+  @include container;
+}
+
+.site__header--above {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.site__header-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: $base__space-unit;
+  z-index: 9999;
+
+  ul {
+    @include reset-list;
+    display: none;
+  }
+
+  li {
+    position: relative;
+    display: inline-block;
+  }
+
+  a {
+    color: $color__background-body;
+  }
+
+  // menu items
+  & > * * {
+    padding: 0 0.5rem;
+    text-transform: uppercase;
+  }
+}
+
+.site__header-nav--no-bg {
+  @include border-bottom;
+
+  a {
+    color: $color__brand;
+  }
+}
+
+.site__header-logo {
+  height: 1.4 * $base__space-unit;
+  min-width: 2.3 * $base__space-unit;
+}
+
+.site__header-title {
+  @include sr-only;
+}
+
+/* collapsed */
+.site__header-nav.toggled ul {
+  display: unset;
+}
+
+// TODO: refactor breakpoints to use mixin
+@media screen and (min-width: 768px) {
+  .site__header-nav--closed {
+    display: none;
+  }
+
+  .site__header-nav ul {
+    display: unset;
   }
 }
 

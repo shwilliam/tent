@@ -1,0 +1,62 @@
+/*--------------------------------------------------------------
+# WordPress class related styles
+--------------------------------------------------------------*/
+
+.page__content .wp-smiley,
+.entry__content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+.wp-caption {
+  margin-bottom: $base__space-unit;
+  max-width: 100%;
+
+  img[class*="wp-image-"] {
+    @include center-block;
+  }
+
+  .wp-caption-text {
+    margin: 0.8075rem 0;
+  }
+}
+
+.wp-caption-text {
+  text-align: center;
+}
+
+.sticky {
+  display: block;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.bypostauthor {
+  display: block;
+}
+
+.gallery-caption {
+  display: block;
+}
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: $base__space-unit;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: $base__space-unit;
+}
+
+.aligncenter {
+  clear: both;
+  @include center-block;
+}

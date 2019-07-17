@@ -24,7 +24,7 @@ add_filter( 'body_class', 'tent_body_classes' );
 function tent_login_logo() {
   echo '<style type="text/css">
     h1 a {
-      background-image:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-text-dark.svg) !important; 
+      background-image:url('.get_stylesheet_directory_uri().'/images/logo__text--dark.svg) !important; 
       background-repeat: no-repeat !important;
       background-size: 100% 100px !important;
       width: 100% !important;

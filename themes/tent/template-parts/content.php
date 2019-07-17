@@ -8,12 +8,12 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header entry-header--float">
+	<header class="entry__header entry__header--float">
 		<?php if (has_post_thumbnail()) : ?>
       <?php
         the_post_thumbnail(
           'large',
-          ['class' => 'entry-header__img entry-header__img--fill']
+          ['class' => 'entry__header-img entry__header-img--fill']
         );
       ?>
 		<?php endif; ?>
@@ -21,7 +21,7 @@
     <?php
       the_title(
         sprintf(
-          '<h2 class="entry-title entry-title--float"><a class="entry-title__link" href="%s">',
+          '<h2 class="entry__title entry__title--float"><a class="entry__title__link" href="%s">',
           esc_url(get_permalink())
         ),
         '</a></h2>'
@@ -29,7 +29,7 @@
     ?>
 
 		<?php if ('post' === get_post_type()) : ?>
-      <div class="entry-meta entry-meta--float">
+      <div class="entry__meta entry__meta--float">
         <?php tent_posted_on(); ?> /
         <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?> /
         <?php tent_posted_by(); ?>
@@ -37,7 +37,7 @@
 		<?php endif; ?>
 	</header>
 
-	<div class="entry-content">
+	<div class="entry__content">
 		<?php the_excerpt(); ?>
 
     <?=

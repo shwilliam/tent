@@ -17,64 +17,60 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<div id="page"> 
-      <a class="skip-link screen-reader-text" href="#content">
-        <?php echo esc_html('Skip to content'); ?>
-      </a>
+    <a class="skip-link screen-reader-text" href="#content">
+      <?php echo esc_html('Skip to content'); ?>
+    </a>
 
-      <header
-        id="masthead"
-        role="banner"
-        class="site-header <?php
-          if (has_block('tent/hero-image-header'))
-            : echo 'site-header--above';
-          endif;
-        ?>"
+    <header
+      role="banner"
+      class="site__header <?php
+        if (has_block('tent/hero-image-header'))
+          : echo 'site__header--above';
+        endif;
+      ?>"
+    >
+      <nav
+        class="site__header-nav
+          <?= has_block('tent/hero-image-header')
+            ? ''
+            : 'site__header-nav--no-bg';
+          ?>"
+        role="navigation"
       >
-        <nav
-          id="site-navigation"
-          class="site-header__nav
-            <?= has_block('tent/hero-image-header')
-              ? ''
-              : 'site-header__nav--no-bg';
-            ?>"
-          role="navigation"
+        <a
+          title="Home"
+          rel="home"
+          href="<?php echo esc_url(home_url('/')); ?>"
+          class="site__header-link"
         >
-          <a
-            title="Home"
-            rel="home"
-            href="<?php echo esc_url(home_url('/')); ?>"
-            class="site-header__link"
-          >
-            <h1 class="site-header__title">
-              <?php bloginfo('name'); ?>
-            </h1>
-            <img
-              alt=""
-              class="site-header__logo"
-              src="<?=
-                has_block('tent/hero-image-header')
-                  ? get_stylesheet_directory_uri().'/images/inhabitent-logo-tent-white.svg'
-                  : get_stylesheet_directory_uri().'/images/inhabitent-logo-tent.svg';
-              ?>"
-            />
-          </a>
-          <button
-            class="site-header__nav--closed"
-            aria-controls="primary-menu"
-            aria-expanded="false"
-          >
-            <?php echo esc_html('menu'); ?>
-          </button>
-					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-				</nav>
-			</header>
+          <h1 class="site__header-title">
+            <?php bloginfo('name'); ?>
+          </h1>
+          <img
+            alt=""
+            class="site__header-logo"
+            src="<?=
+              has_block('tent/hero-image-header')
+                ? get_stylesheet_directory_uri().'/images/logo__tent--white.svg'
+                : get_stylesheet_directory_uri().'/images/logo__tent.svg';
+            ?>"
+          />
+        </a>
+        <button
+          class="site__header-nav--closed"
+          aria-controls="primary-menu"
+          aria-expanded="false"
+        >
+          <?php echo esc_html('menu'); ?>
+        </button>
+        <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+      </nav>
+    </header>
 
-      <div
-        id="content"
-        class="site <?php
-          if (has_block('tent/hero-image-header'))
-            : echo 'site--splash';
-            endif;
-        ?>"
-      >
+    <div
+      class="site <?php
+        if (has_block('tent/hero-image-header'))
+          : echo 'site--splash';
+          endif;
+      ?>"
+    >

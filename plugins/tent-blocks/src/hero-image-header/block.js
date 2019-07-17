@@ -149,7 +149,7 @@ class HeroImageHeader {
             }}
           >
             <div className="image-wrapper">
-              <div className="entry-title-preview">
+              <div className="entry__title-preview">
                 {title ? <h2>{title}</h2> : <h2>Loading title...</h2>}
               </div>
 

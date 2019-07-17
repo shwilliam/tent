@@ -7,17 +7,15 @@
 
 get_header(); ?>
 
-  <div id="primary">
-		<main id="main" class="site__main" role="main">
+  <main class="site__main">
 
-			<?php while (have_posts()) : the_post(); ?>
+    <?php while (have_posts()) : the_post(); ?>
 
-				<?php get_template_part('template-parts/content', 'page'); ?>
+      <?php get_template_part('template-parts/content', 'page'); ?>
 
-			<?php endwhile; ?>
+    <?php endwhile; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+  </main>
 
 <?php if (!has_block('tent/hero-image-header')) : get_sidebar(); endif; ?>
 <?php get_footer(); ?>

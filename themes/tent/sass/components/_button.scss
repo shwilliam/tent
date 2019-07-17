@@ -13,12 +13,13 @@
 }
 
 .button {
+  @include font-size(0.75);
   padding: $base__space-unit/2;
-  font-size: 0.85rem;
   border: 1px solid $button--primary;
   color: $button--primary;
   text-transform: uppercase;
   text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   padding-left: 0.75 * $base__space-unit;
   padding-right: 0.75 * $base__space-unit;
 

@@ -7,14 +7,14 @@
 
 get_header(); ?>
 
-	<div id="primary" class="shop">
-		<main id="main" class="site__main" role="main">
+	<div class="shop">
+		<main class="site__main">
 
-      <header class="page-header">
+      <header class="page__header">
         <?php
           $active_term = get_queried_object();
         ?>
-        <h2 class="page-title">
+        <h2 class="page__title">
           <?= $active_term->name; ?>
         </h2>
 

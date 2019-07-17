@@ -8,13 +8,13 @@
 ?>
 
 <section class="no-results not-found">
-	<header class="page-header">
-		<h2 class="page-title">
+	<header class="page__header">
+		<h2 class="page__title">
 			<?php esc_html('Nothing Found'); ?>
 		</h2>
-	</header><!-- .page-header -->
+	</header>
 
-	<div class="page-content">
+	<div class="page__content">
 		<?php if (is_home() && current_user_can('publish_posts')) : ?>
 
 			<p>
@@ -36,5 +36,5 @@
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>
-	</div><!-- .page-content -->
-</section><!-- .no-results -->
+	</div>
+</section>

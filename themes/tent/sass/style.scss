@@ -13,34 +13,33 @@ Tags:
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
+# Variables
+# Mixins
+# Reset
 # Embedded Fonts
 # Typography
-# Elements
-# Forms
-# Modules 
-# Media
+# WordPress
+# Modules
 # Templates
+# Components
 --------------------------------------------------------------*/
-
-@import "normalize";
 
 @import "variables";
 @import "mixins";
 
+@import "reset";
+
 @import "fonts";
 @import "typography";
-@import "elements";
-@import "forms";
+@import "wordpress";
 @import "modules";
-@import "content";
-@import "media";
 
 @import "templates/_site";
-@import "templates/_header";
-@import "templates/_sidebar";
 @import "templates/_post";
 @import "templates/_shop";
 
 @import "components/_button";
 @import "components/_shop-thumbnail";
+@import "components/_widget";
+@import "components/_sidebar";
+@import "components/_search-form";

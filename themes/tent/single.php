@@ -7,26 +7,24 @@
 
 get_header(); ?>
 
-	<div id="primary">
-		<main id="main" class="site__main" role="main">
+  <main class="site__main">
 
-      <?php while (have_posts()) : the_post(); ?>
+    <?php while (have_posts()) : the_post(); ?>
 
-        <?php get_template_part('template-parts/content', 'single'); ?>
+      <?php get_template_part('template-parts/content', 'single'); ?>
 
-        <?php the_post_navigation(); ?>
+      <?php the_post_navigation(); ?>
 
-        <?php
-          // if open or at least one comment
-          if (comments_open() || get_comments_number()) :
-            comments_template();
-          endif;
-        ?>
+      <?php
+        // if open or at least one comment
+        if (comments_open() || get_comments_number()) :
+          comments_template();
+        endif;
+      ?>
 
-      <?php endwhile; ?>
+    <?php endwhile; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+  </main>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

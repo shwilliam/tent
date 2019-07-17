@@ -2,22 +2,22 @@
 # Post-related styles 
 --------------------------------------------------------------*/
 
-.entry-header--float {
+.entry__header--float {
   position: relative;
   width: 100%;
 }
 
-.entry-header__img--fill {
+.entry__header-img--fill {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.entry-title--secondary {
+.entry__title--secondary {
   color: $color__secondary;
 }
 
-.entry-title--float {
+.entry__title--float {
   position: absolute;
   top: $base__space-unit;
   width: 70%;
@@ -31,11 +31,11 @@
   }
 }
 
-.entry-content {
+.entry__content {
   margin-bottom: 2 * $base__space-unit;
 }
 
-.entry-meta--float {
+.entry__meta--float {
   position: absolute;
   bottom: 0;
   right: 0;
