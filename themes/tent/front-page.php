@@ -26,6 +26,7 @@ get_header(); ?>
             $term_name = $term->name;
             $term_description = $term->description;
             $term_url = get_term_link($term);
+            $term_icon_url = get_template_directory_uri().'/images/product-type__'.$term_name.'.svg';
           
             // load template part in this scope
             include(locate_template('template-parts/content-thumbnail-shop.php', false, false));

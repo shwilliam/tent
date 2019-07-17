@@ -10,7 +10,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <a class="link-reset" href="<?= esc_url($term_url); ?>">
     <header class="entry-header">
-      <!-- term icon -->
+      <img src="<?= $term_icon_url; ?>" />
 
       <h3 class="screen-reader-text">
         <?= $term_name; ?> products
