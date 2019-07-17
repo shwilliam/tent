@@ -17,6 +17,22 @@
   }
 }
 
+@mixin reset-link {
+  &,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color__text-main;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #000;
+  }
+}
+
 @mixin reset-list {
   list-style: none;
   margin: 0;
@@ -29,8 +45,16 @@
   margin-right: auto;
 }
 
+@mixin bordered {
+  border: 1px solid $color__background-hr;
+}
+
 @mixin border-bottom {
   border-bottom: 1px solid #e1e1e1;
+}
+
+@mixin border-top {
+  border-top: 4px solid #e1e1e1;
 }
 
 // Bullet-proof sr-only

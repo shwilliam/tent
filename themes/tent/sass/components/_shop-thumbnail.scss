@@ -1,0 +1,36 @@
+/*--------------------------------------------------------------
+# Shop thumbnail styles 
+--------------------------------------------------------------*/
+
+.shop-thumbnail {
+  @include bordered;
+  @include border-top;
+
+  &:hover {
+    border-color: $color__secondary;
+  }
+
+  &:not(:last-child) {
+    margin-right: $base__space-unit / 2;
+  }
+
+  &:not(:first-child) {
+    margin-left: $base__space-unit / 2;
+  }
+}
+
+.shop-thumbnail__content {
+  text-align: center;
+  padding: 0 $base__space-unit / 2;
+}
+
+.shop-thumbnail__icon {
+  width: 70px;
+  height: 70px;
+  margin: $base__space-unit 0;
+}
+
+.shop-thumbnail__action {
+  display: inline-block;
+  margin: $base__space-unit 0;
+}

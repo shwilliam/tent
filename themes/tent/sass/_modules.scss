@@ -15,6 +15,10 @@
   @include container--small;
 }
 
+.reset-link {
+  @include reset-link;
+}
+
 .flex {
   display: flex;
 }

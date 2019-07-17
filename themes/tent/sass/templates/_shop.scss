@@ -21,7 +21,7 @@
 }
 
 .shop__item {
-  border: 1px solid $color__background-hr;
+  @include bordered;
   overflow: hidden;
 }
 

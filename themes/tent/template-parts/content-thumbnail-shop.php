@@ -7,24 +7,22 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <a class="link-reset" href="<?= esc_url($term_url); ?>">
-    <header class="entry-header">
-      <img src="<?= $term_icon_url; ?>" />
+<div id="shop-thumbnail-<?= $term_name; ?>" class="shop-thumbnail">
+  <a class="reset-link" href="<?= esc_url($term_url); ?>">
+    <header>
+      <img class="shop-thumbnail__icon" src="<?= $term_icon_url; ?>" />
 
       <h3 class="screen-reader-text">
         <?= $term_name; ?> products
       </h3>
-
-      <div class="entry-meta">
-        <?= $term_description; ?>
-      </div>
     </header>
 
-    <div class="entry-content">
-      <a class="button" href="<?= esc_url($term_url); ?>">
-        <?= $term_name.' Stuff'; ?>
-      </a>
+    <div class="shop-thumbnail__content">
+      <?= $term_description; ?>
     </div>
+
+    <a class="button shop-thumbnail__action" href="<?= esc_url($term_url); ?>">
+      <?= $term_name.' Stuff'; ?>
+    </a>
   </a>
-</article>
+</div>
