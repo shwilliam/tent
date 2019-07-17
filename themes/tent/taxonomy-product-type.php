@@ -1,6 +1,6 @@
 <?php
 /**
- * Shop (archive) template
+ * Product-type pages template
  *
  * @package tent
  */
@@ -11,30 +11,15 @@ get_header(); ?>
 		<main id="main" class="site__main" role="main">
 
       <header class="page-header">
+        <?php
+          $active_term = get_queried_object();
+        ?>
         <h2 class="page-title">
-          Shop Stuff
+          <?= $active_term->name; ?>
         </h2>
 
-        <?php
-        ?>
-
-        <div class="shop__terms">
-          <?php
-            $terms = get_terms(array(
-              'taxonomy' => 'product-type',
-            ));
-            if ($terms) :
-              foreach ($terms as $term) :
-          ?>
-
-            <a href="<?= esc_url(get_term_link($term)); ?>">
-              <?= $term->name; ?>
-            </a>
-
-          <?php
-              endforeach; 
-            endif;
-          ?>
+        <div class="shop__description">
+          <?= $active_term->description; ?>
         </div>
 
       </header>
@@ -42,7 +27,16 @@ get_header(); ?>
       <?php
         $product_posts = get_posts(array(
           'post_type' => 'product',
-          'posts_per_page' => 1000,
+          'posts_per_page' => 4,
+          'tax_query' => array(
+            array(
+              'taxonomy' => 'product-type',
+              'field' => 'slug',
+              'terms' => $active_term->slug, 
+              'include_children' => true,
+              'operator' => 'IN'
+            )
+          ),
         ));
       ?>
 
@@ -61,6 +55,8 @@ get_header(); ?>
             ?>
 
           </section>
+
+          <?php the_posts_navigation(); ?>
 
         <?php else : ?>
 

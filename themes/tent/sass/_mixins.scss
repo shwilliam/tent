@@ -49,12 +49,16 @@
   border: 1px solid $color__background-hr;
 }
 
-@mixin border-bottom {
-  border-bottom: 1px solid #e1e1e1;
+@mixin border-top {
+  border-top: 4px solid $color__border;
 }
 
-@mixin border-top {
-  border-top: 4px solid #e1e1e1;
+@mixin border-bottom {
+  border-bottom: 1px solid $color__border;
+}
+
+@mixin border-top--dashed {
+  border-top: 1px dashed $color__border--dark;
 }
 
 // Bullet-proof sr-only

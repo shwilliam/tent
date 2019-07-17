@@ -6,18 +6,26 @@
   text-align: center;
 }
 
+.shop__description {
+}
+
 .shop__terms {
   width: 75%;
+  max-width: 400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
 
 .shop__grid {
+  @include border-top--dashed;
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: $base__space-unit;
   grid-row-gap: $base__space-unit;
+  padding: $base__space-unit 0;
+  margin-top: 2 * $base__space-unit;
 }
 
 .shop__item {
