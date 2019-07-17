@@ -10,6 +10,13 @@
   margin-left: auto;
 }
 
+@mixin container--small {
+  > * {
+    padding-right: 10vw;
+    padding-left: 10vw;
+  }
+}
+
 @mixin reset-list {
   list-style: none;
   margin: 0;

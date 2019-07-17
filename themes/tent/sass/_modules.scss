@@ -11,6 +11,10 @@
   @include container;
 }
 
+.container--small {
+  @include container--small;
+}
+
 .flex {
   display: flex;
 }
