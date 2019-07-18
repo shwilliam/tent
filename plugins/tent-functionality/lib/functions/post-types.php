@@ -68,3 +68,66 @@ function tent_cpt_product() {
 }
 
 add_action('init', 'tent_cpt_product', 0);
+
+function adventure() {
+
+	$labels = array(
+		'name'                  => _x( 'Adventures', 'Post Type General Name', 'adventure' ),
+		'singular_name'         => _x( 'Adventure', 'Post Type Singular Name', 'adventure' ),
+		'menu_name'             => __( 'Adventures', 'adventure' ),
+		'name_admin_bar'        => __( 'Adventures', 'adventure' ),
+		'archives'              => __( 'Adventure Archives', 'adventure' ),
+		'attributes'            => __( 'Adventure Attributes', 'adventure' ),
+		'parent_item_colon'     => __( 'Parent Adventure:', 'adventure' ),
+		'all_items'             => __( 'All Adventures', 'adventure' ),
+		'add_new_item'          => __( 'Add New Adventure', 'adventure' ),
+		'add_new'               => __( 'Add New', 'adventure' ),
+		'new_item'              => __( 'New Adventure', 'adventure' ),
+		'edit_item'             => __( 'Edit Adventure', 'adventure' ),
+		'update_item'           => __( 'Update Adventure', 'adventure' ),
+		'view_item'             => __( 'View Adventure', 'adventure' ),
+		'view_items'            => __( 'View Adventures', 'adventure' ),
+		'search_items'          => __( 'Search Adventure', 'adventure' ),
+		'not_found'             => __( 'Not found', 'adventure' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'adventure' ),
+		'featured_image'        => __( 'Featured Image', 'adventure' ),
+		'set_featured_image'    => __( 'Set featured image', 'adventure' ),
+		'remove_featured_image' => __( 'Remove featured image', 'adventure' ),
+		'use_featured_image'    => __( 'Use as featured image', 'adventure' ),
+		'insert_into_item'      => __( 'Insert into adventure', 'adventure' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this adventure', 'adventure' ),
+		'items_list'            => __( 'Adventures list', 'adventure' ),
+		'items_list_navigation' => __( 'Adventures list navigation', 'adventure' ),
+		'filter_items_list'     => __( 'Filter adventures list', 'adventure' ),
+	);
+	$rewrite = array(
+		'slug'                  => 'adventure',
+		'with_front'            => true,
+		'pages'                 => true,
+		'feeds'                 => true,
+	);
+	$args = array(
+		'label'                 => __( 'Adventure', 'adventure' ),
+		'description'           => __( 'Adventures', 'adventure' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'rewrite'               => $rewrite,
+		'capability_type'       => 'page',
+		'show_in_rest'          => true,
+	);
+	register_post_type( 'adventure', $args );
+
+}
+
+add_action( 'init', 'adventure', 0 );
