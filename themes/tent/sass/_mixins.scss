@@ -61,6 +61,14 @@
   border-top: 1px dashed $color__border--dark;
 }
 
+@mixin obscure {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+
 // Bullet-proof sr-only
 // (https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034)
 @mixin sr-only {

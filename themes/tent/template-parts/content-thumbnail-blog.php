@@ -32,7 +32,7 @@
 
 	<div class="entry__content">
     <a class="button" href="<?= esc_url(get_permalink()); ?>">
-      Read more
+      Read entry
       <span class="button__icon" role="img" aria-label="">
         &#8594;
       </span>

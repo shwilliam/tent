@@ -41,6 +41,15 @@
   }
 }
 
+.button--tertiary {
+  color: $color__background-body;
+  border-color: $color__background-body;
+
+  &:hover {
+    background-color: $button--secondary;
+  }
+}
+
 .button__icon {
   font-size: 1.3rem;
 }

@@ -55,6 +55,22 @@ get_header(); ?>
       ?>
     </div>
       
+    <h2>Latest Adventures</h2>
+    <div class="adventures-thumbnail__wrapper">
+      <?php
+        $adventure_posts = get_posts(array(
+          'post_type' => 'adventure',
+          'posts_per_page' => 4,
+          'order' => 'ASC',
+        ));
+
+        foreach ($adventure_posts as $post) : setup_postdata($post);
+
+          get_template_part('template-parts/content', 'thumbnail-adventures');
+
+        endforeach; wp_reset_postdata();
+      ?>
+    </div>
   </main>
 
 <?php if (!has_block('tent/hero-image-header')) : get_sidebar(); endif; ?>

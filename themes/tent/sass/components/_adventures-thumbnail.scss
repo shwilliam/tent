@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------
+# Adventures thumbnail styles 
+--------------------------------------------------------------*/
+
+@mixin adventures-thumbnail__grid($areas) {
+  @for $i from 1 through $areas {
+    :nth-child(#{$i}) {
+      grid-area: a#{$i};
+    }
+  }
+}
+
+.adventures-thumbnail__wrapper {
+  @include adventures-thumbnail__grid(4);
+  display: grid;
+  grid-template-areas:
+    "a1 a2 a2"
+    "a1 a3 a4";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: $base__space-unit/2;
+  height: 80%;
+  min-height: 400px;
+  max-height: 500px;
+}
+
+.adventures-thumbnail {
+  position: relative;
+  width: 100%;
+}
+
+.adventures-thumbnail__header {
+  @include obscure;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: $base__space-unit;
+  text-align: left;
+}
+
+.adventures-thumbnail__img {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.adventures-thumbnail__link {
+  display: block;
+  color: $color__background-body;
+}
