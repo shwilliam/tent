@@ -1,0 +1,56 @@
+/*--------------------------------------------------------------
+# Blog post thumbnail styles 
+--------------------------------------------------------------*/
+
+.blog-thumbnail {
+  @include bordered;
+
+  &:not(:last-child) {
+    margin-right: $base__space-unit / 2;
+  }
+
+  &:not(:first-child) {
+    margin-left: $base__space-unit / 2;
+  }
+}
+
+.blog-thumbnail__header {
+  @include border-top;
+
+  text-align: left;
+  padding: 0 $base__space-unit / 2;
+}
+
+.blog-thumbnail__title {
+  margin: 0;
+}
+
+.blog-thumbnail__meta {
+  @include font-size(0.75);
+  margin-top: $base__space-unit;
+}
+
+.blog-thumbnail__img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.blog-thumbnail__img {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
+
+.blog-thumbnail__action {
+  display: inline-block;
+  margin: $base__space-unit 0;
+  line-height: 1;
+}

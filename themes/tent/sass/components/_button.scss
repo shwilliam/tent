@@ -42,8 +42,12 @@
 }
 
 .button--tertiary {
-  color: $color__background-body;
   border-color: $color__background-body;
+
+  &,
+  &:visited {
+    color: $color__background-body;
+  }
 
   &:hover {
     background-color: $button--secondary;
