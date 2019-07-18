@@ -34,12 +34,12 @@ Tags:
 @import "wordpress";
 @import "modules";
 
-@import "templates/_site";
-@import "templates/_post";
-@import "templates/_shop";
+@import "templates/site";
+@import "templates/post";
+@import "templates/shop";
 
-@import "components/_button";
-@import "components/_shop-thumbnail";
-@import "components/_widget";
-@import "components/_sidebar";
-@import "components/_search-form";
+@import "components/button";
+@import "components/shop-thumbnail";
+@import "components/widget";
+@import "components/sidebar";
+@import "components/search-form";

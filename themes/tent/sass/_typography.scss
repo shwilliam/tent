@@ -9,6 +9,11 @@ body {
   line-height: $font__line-height-body;
 }
 
+@mixin title {
+  font-family: $font__title;
+  text-transform: uppercase;
+}
+
 a {
   color: $color__link;
   text-decoration: none;

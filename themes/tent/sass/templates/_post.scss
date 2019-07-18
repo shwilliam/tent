@@ -2,6 +2,10 @@
 # Post-related styles 
 --------------------------------------------------------------*/
 
+.entry__title {
+  @include title;
+}
+
 .entry__header--float {
   position: relative;
   width: 100%;
