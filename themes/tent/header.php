@@ -30,6 +30,7 @@
       ?>"
     >
       <nav
+        id="site-navigation"
         class="site__header-nav
           <?= has_block('tent/hero-image-header')
             ? ''
