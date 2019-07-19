@@ -7,19 +7,19 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('adventures-thumbnail'); ?>>
+<article id="adventure-<?php the_ID(); ?>" <?php post_class('adventures-thumbnail'); ?>>
   <?php if (has_post_thumbnail()) : ?>
     <?php
       the_post_thumbnail(
         'large',
-        ['class' => 'entry__header-img adventures-thumbnail__img']
+        ['class' => 'adventures-thumbnail__img']
       );
     ?>
   <?php endif; ?>
 
-	<header class="entry__header adventures-thumbnail__header">
-    <h3 class="entry__title">
-      <a class="entry__title__link adventures-thumbnail__link" href="<?= esc_url(get_permalink()); ?>">
+	<header class="adventures-thumbnail__header">
+    <h3 class="entry__title entry__title--serif">
+      <a class="adventures-thumbnail__link" href="<?= esc_url(get_permalink()); ?>">
         <?= the_title(); ?>
       </a>
     </h3>

@@ -3,13 +3,16 @@
 --------------------------------------------------------------*/
 
 body {
-  color: $color__text-main;
-  font-family: $font__main;
   @include font-size(1);
+
+  font-family: $font__main;
+  color: $color__text-main;
   line-height: $font__line-height-body;
 }
 
 @mixin title {
+  @include font-size(2);
+
   font-family: $font__title;
   text-transform: uppercase;
 }

@@ -13,20 +13,20 @@
       <?php
         the_post_thumbnail(
           'large',
-          ['class' => 'entry__header-img blog-thumbnail__img']
+          ['class' => 'blog-thumbnail__img']
         );
       ?>
     <?php endif; ?>
   </div>
 
-	<header class="entry__header blog-thumbnail__header">
-    <div class="entry__meta blog-thumbnail__meta">
+	<header class="blog-thumbnail__header">
+    <div class="blog-thumbnail__meta">
       <?php tent_posted_on(); ?> /
       <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?>
     </div>
 
-    <h3 class="entry__title blog-thumbnail__title">
-      <a class="entry__title__link" href="<?= esc_url(get_permalink()); ?>">
+    <h3 class="entry__title entry__title--small blog-thumbnail__title">
+      <a href="<?= esc_url(get_permalink()); ?>">
         <?= the_title(); ?>
       </a>
     </h3>

@@ -11,11 +11,11 @@
 
   <?php if (!has_block('tent/hero-image-header')) : ?>
     <header class="entry__header entry__header--float">
-      <?php the_title('<h2 class="entry__title">', '</h2>'); ?>
+      <?php the_title('<h2 class="page__title">', '</h2>'); ?>
     </header>
   <?php endif; ?>
 
-	<div class="entry__content">
+	<div class="entry__content entry__content--left">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages(array(

@@ -2,8 +2,7 @@
 # Page styles 
 --------------------------------------------------------------*/
 
-.page__header {
-}
-
 .page__title {
+  @include title;
+  @include font-size(2.4);
 }

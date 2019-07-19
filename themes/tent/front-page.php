@@ -13,7 +13,7 @@ get_header(); ?>
       <?php get_template_part('template-parts/content', 'page'); ?>
     <?php endwhile; ?>
 
-    <h2>Shop Stuff</h2>
+    <h2 class="entry__title entry__title--light">Shop Stuff</h2>
     <div class="flex">
       <?php
         $product_types_terms = get_terms(array(
@@ -39,7 +39,7 @@ get_header(); ?>
       ?>
     </div>
 
-    <h2>Inhabitent Journal</h2>
+    <h2 class="entry__title entry__title--light">Inhabitent Journal</h2>
     <div class="flex">
       <?php
         $blog_posts = get_posts(array(
@@ -55,7 +55,7 @@ get_header(); ?>
       ?>
     </div>
       
-    <h2>Latest Adventures</h2>
+    <h2 class="entry__title entry__title--light">Latest Adventures</h2>
     <div class="adventures-thumbnail__wrapper">
       <?php
         $adventure_posts = get_posts(array(

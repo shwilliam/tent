@@ -14,8 +14,6 @@ get_header(); ?>
         Shop Stuff
       </h2>
 
-      <?php
-      ?>
 
       <div class="shop__terms">
         <?php

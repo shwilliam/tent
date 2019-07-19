@@ -21,7 +21,7 @@
       <?= $term_description; ?>
     </div>
 
-    <a class="button shop-thumbnail__action" href="<?= esc_url($term_url); ?>">
+    <a class="button button--secondary shop-thumbnail__action" href="<?= esc_url($term_url); ?>">
       <?= $term_name.' Stuff'; ?>
     </a>
   </a>

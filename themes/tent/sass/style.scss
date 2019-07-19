@@ -34,14 +34,14 @@ Tags:
 @import "wordpress";
 @import "modules";
 
-@import "templates/site";
-@import "templates/post";
-@import "templates/shop";
-
+@import "components/site";
+@import "components/page";
+@import "components/shop";
+@import "components/entry";
 @import "components/button";
-@import "components/shop-thumbnail";
 @import "components/widget";
 @import "components/sidebar";
 @import "components/search-form";
-@import "components/adventures-thumbnail";
+@import "components/shop-thumbnail";
 @import "components/blog-thumbnail";
+@import "components/adventures-thumbnail";
