@@ -54,3 +54,9 @@
     color: $color__background-body;
   }
 }
+
+.adventures-thumbnail__action {
+  @include font-size(1.2);
+  display: inline-block;
+  margin: $base__space-unit 0;
+}
