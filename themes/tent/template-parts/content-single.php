@@ -27,15 +27,43 @@
 
 	<div class="entry__content">
 		<?php the_content(); ?>
-		<?php
-			wp_link_pages(array(
-				'before' => '<div class="page-links">' . esc_html('Pages:'),
-				'after'  => '</div>',
-			));
-		?>
 	</div>
 
-	<footer class="entry-footer">
-		<?php tent_entry_footer(); ?>
+	<footer class="entry__footer">
+
+		<div class="entry__links">
+			<?php tent_entry_footer(); ?>
+		</div>
+
+    <div class="entry__actions">
+      <a
+        class="button entry__actions-btn"
+        href="https://facebook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        Like
+      </a>
+      <a
+        class="button entry__actions-btn"
+        href="https://twitter.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+        Tweet
+      </a>
+      <a
+        class="button entry__actions-btn"
+        href="https://pinterest.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+				<i class="fa fa-pinterest" aria-hidden="true"></i>
+        Pin
+      </a>
+    </div>
+
 	</footer>
 </article>

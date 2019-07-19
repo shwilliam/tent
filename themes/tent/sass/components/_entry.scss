@@ -22,6 +22,10 @@
   font-weight: 400;
 }
 
+.entry__header {
+  margin-top: $base__space-unit;
+}
+
 .entry__header--float {
   position: relative;
   width: 100%;
@@ -83,5 +87,29 @@
   right: 0;
   padding: $base__space-unit/2;
   background-color: $color__brand;
-  color: $color__background-body;
+
+  &,
+  a {
+    color: $color__background-body;
+  }
+}
+
+.entry__footer {
+  * {
+    font-family: $font__title;
+    text-transform: uppercase;
+  }
+}
+
+.entry__links {
+  max-width: 475px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.entry__actions {
+  max-width: 250px;
+  display: flex;
+  justify-content: space-between;
+  padding: $base__space-unit 0;
 }

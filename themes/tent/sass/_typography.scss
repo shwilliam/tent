@@ -15,6 +15,7 @@ body {
 
   font-family: $font__title;
   text-transform: uppercase;
+  line-height: 1.15;
 }
 
 a {
@@ -39,4 +40,8 @@ a {
   &:active {
     outline: 0;
   }
+}
+
+.fa {
+  font-family: "FontAwesome" !important;
 }
