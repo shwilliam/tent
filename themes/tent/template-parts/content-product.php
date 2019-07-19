@@ -8,21 +8,18 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('shop__item'); ?>>
-	<header class="entry__header">
-		<?php if (has_post_thumbnail()) : ?>
-			<?php the_post_thumbnail('large', array('class' => 'shop__item-img')); ?>
-		<?php endif; ?>
+  <a class="shop__item-link" href="<?= esc_url(get_permalink()); ?>">
+
+    <div class="shop__item-img-wrapper">
+      <?php if (has_post_thumbnail()) : ?>
+        <?php the_post_thumbnail('large', array('class' => 'shop__item-img')); ?>
+      <?php endif; ?>
+    </div>
 
     <div class="shop__item-description">
-      <?php
-        the_title(
-          sprintf(
-            '<h2 class="shop__item-title"><a href="%s">',
-            esc_url(get_permalink())
-          ),
-          '</a></h2>'
-        );
-      ?>
+      <h2 class="shop__item-title">
+        <?= the_title(); ?>
+      </h2>
 
       <div class="entry__meta shop__item-price">
         $<?=
@@ -34,5 +31,5 @@
       </div>
     </div>
 
-	</header>
+  </a>
 </article>
