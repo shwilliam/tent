@@ -2,17 +2,7 @@
 # Button styles 
 --------------------------------------------------------------*/
 
-@mixin button--green {
-  background-color: $button--secondary;
-  border-color: $button--secondary;
-
-  &,
-  &:visited {
-    color: $color__background-body;
-  }
-}
-
-.button {
+@mixin button {
   @include title;
   @include font-size(0.75);
 
@@ -31,6 +21,20 @@
   &:hover {
     @include button--green;
   }
+}
+
+@mixin button--green {
+  background-color: $button--secondary;
+  border-color: $button--secondary;
+
+  &,
+  &:visited {
+    color: $color__background-body;
+  }
+}
+
+.button {
+  @include button;
 }
 
 .button--secondary {

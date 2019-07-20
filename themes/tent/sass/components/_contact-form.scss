@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# Contact form 7 styles 
+--------------------------------------------------------------*/
+
+// don't expect client to add class names
+.wpcf7-form {
+  font-family: $font__title;
+  text-transform: uppercase;
+
+  i {
+    color: $color__secondary;
+  }
+
+  input[type="submit"] {
+    @include button;
+    @include button--green;
+  }
+}
+
+.wpcf7-form-control {
+  @include bordered;
+
+  font-family: $font__main;
+  background-color: $field__bg;
+  line-height: $font__line-height-body;
+  padding: 0 $base__space-unit/4;
+}
