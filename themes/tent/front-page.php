@@ -14,7 +14,10 @@ get_header(); ?>
     <?php endwhile; ?>
 
     <section class="page__section">
-      <h2 class="entry__title entry__title--light">Shop Stuff</h2>
+      <h2 class="entry__title entry__title--light">
+        Shop Stuff
+      </h2>
+
       <div class="flex">
         <?php
           $product_types_terms = get_terms(array(
@@ -42,7 +45,10 @@ get_header(); ?>
     </section>
 
     <section class="page__section">
-      <h2 class="entry__title entry__title--light">Inhabitent Journal</h2>
+      <h2 class="entry__title entry__title--light">
+        Inhabitent Journal
+      </h2>
+
       <div class="flex">
         <?php
           $blog_posts = get_posts(array(
@@ -60,7 +66,10 @@ get_header(); ?>
     </section>
       
     <section class="page__section page__section--left">
-      <h2 class="entry__title entry__title--light">Latest Adventures</h2>
+      <h2 class="entry__title entry__title--light entry__title--center">
+        Latest Adventures
+      </h2>
+
       <div class="adventures-thumbnail__wrapper">
         <?php
           $adventure_posts = get_posts(array(

@@ -13,7 +13,7 @@
 
   input[type="submit"] {
     @include button;
-    @include button--green;
+    @include button--secondary;
   }
 }
 
