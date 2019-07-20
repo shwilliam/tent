@@ -19,16 +19,22 @@
 		<?php endif; ?>
 	</header>
 
-	<div class="entry__content">
-    <?php the_title('<h2 class="entry__title entry__title--secondary">', '</h2>'); ?>
+	<div class="entry__content entry__content--left">
+    <h2 class="entry__title entry__title--secondary">
+      <?= the_title(); ?>
+    </h2>
 
-    $<?=
-      number_format(
-        get_post_custom()['price'][0], 
-        2
-      );  
-    ?>
+    <span class="shop__item-price shop__item-price--large">
+      $<?=
+        number_format(
+          get_post_custom()['price'][0], 
+          2
+        );  
+      ?>
+    </span>
 
 		<?php the_content(); ?>
+
+    <?php get_template_part('template-parts/component', 'social-links'); ?>
 	</div>
 </article>

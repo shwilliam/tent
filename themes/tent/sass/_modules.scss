@@ -11,8 +11,8 @@
   @include container;
 }
 
-.container--small {
-  @include container--small;
+.container-small {
+  @include container-small;
 }
 
 .reset-link {
@@ -30,8 +30,9 @@
 
 .flex--split {
   display: flex;
+  justify-content: space-between;
 
   & > * {
-    width: 50%;
+    width: 47.5%;
   }
 }

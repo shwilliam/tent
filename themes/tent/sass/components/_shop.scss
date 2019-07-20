@@ -75,3 +75,8 @@
     color: $color__text-main;
   }
 }
+
+.shop__item-price--large {
+  @include title;
+  @include font-size(1.75);
+}

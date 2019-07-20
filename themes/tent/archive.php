@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<?php if (have_posts()) : ?>
 
-		<header class="page__header">
+		<header class="page__header page__header--underline">
 			<?php
 				the_archive_title('<h2 class="page__title">', '</h2>');
 				the_archive_description('<p>', '</p>');

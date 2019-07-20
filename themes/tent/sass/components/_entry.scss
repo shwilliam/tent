@@ -2,6 +2,21 @@
 # Post-related styles 
 --------------------------------------------------------------*/
 
+.entry__header {
+  margin-top: $base__space-unit;
+}
+
+.entry__header--float {
+  position: relative;
+  width: 100%;
+}
+
+.entry__header-img--fill {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .entry__title {
   @include title;
 }
@@ -22,23 +37,9 @@
   font-weight: 400;
 }
 
-.entry__header {
-  margin-top: $base__space-unit;
-}
-
-.entry__header--float {
-  position: relative;
-  width: 100%;
-}
-
-.entry__header-img--fill {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .entry__title--secondary {
   color: $color__secondary;
+  text-align: left;
 }
 
 .entry__title--float {
