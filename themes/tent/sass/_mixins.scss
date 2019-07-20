@@ -59,7 +59,7 @@
 }
 
 @mixin bordered {
-  border: 1px solid $color__background-hr;
+  border: 1px solid $color__border;
 }
 
 @mixin border-top {

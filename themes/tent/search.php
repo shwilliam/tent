@@ -22,7 +22,7 @@ get_header(); ?>
             );
           ?>
         </h2>
-      </header><!-- .page__header -->
+      </header>
 
       <?php while (have_posts()) : the_post(); ?>
 

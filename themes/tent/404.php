@@ -35,10 +35,6 @@ get_header(); ?>
 
         <?php the_widget('WP_Widget_Recent_Posts'); ?>
 
-        <!--
-          Only show the widget if site has
-          multiple categories 
-        -->
         <?php if (tent_categorized_blog()) : ?>
         <div class="widget">
           <h2 class="widget__title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>

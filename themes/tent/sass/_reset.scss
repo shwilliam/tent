@@ -161,3 +161,9 @@ iframe,
 object {
   max-width: 100%;
 }
+
+li,
+ul,
+ol {
+  @include reset-list;
+}
