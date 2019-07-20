@@ -10,6 +10,7 @@
 plugins/*
 !plugins/tent-functionality/
 !plugins/tent-blocks/
+!plugins/tent-business-hours/
 
 themes/*
 !themes/tent/
