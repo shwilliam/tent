@@ -4,6 +4,19 @@
   font-size: $sizeValue * 1rem;
 }
 
+@mixin pad-between {
+  padding-left: $base__space-unit * 2;
+  padding-right: $base__space-unit * 2;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
 @mixin container {
   max-width: $max-width;
   margin-right: auto;

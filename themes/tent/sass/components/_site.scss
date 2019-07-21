@@ -101,5 +101,6 @@
 }
 
 .site__main {
+  @include pad-between;
   flex-grow: 1;
 }
