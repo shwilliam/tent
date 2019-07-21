@@ -4,7 +4,7 @@
 
 .shop-thumbnail {
   @include bordered;
-  @include border-top;
+  @include border-top--l;
 
   &:hover {
     border-color: $color__secondary;

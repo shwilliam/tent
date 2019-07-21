@@ -18,10 +18,7 @@
 }
 
 .wpcf7-form-control {
-  @include bordered;
-
-  font-family: $font__main;
-  background-color: $field__bg;
-  line-height: $font__line-height-body;
-  padding: 0 $base__space-unit/4;
+  &:not([type='submit']) {
+    @include input;
+  }
 }

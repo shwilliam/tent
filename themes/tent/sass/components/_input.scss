@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------
+# Input styles 
+--------------------------------------------------------------*/
+
+@mixin input {
+  @include bordered;
+
+  width: 100%;
+  font-family: $font__main;
+  background-color: $field__bg;
+  line-height: 1.75;
+  padding: $base__space-unit/4;
+}

@@ -28,6 +28,12 @@
   }
 }
 
+.flex--gutter {
+  > *:not(:first-child) {
+    margin-left: $base__space-unit/2;
+  }
+}
+
 .flex--split {
   display: flex;
   justify-content: space-between;
@@ -35,4 +41,8 @@
   & > * {
     width: 47.5%;
   }
+}
+
+.required {
+  color: $color__secondary;
 }

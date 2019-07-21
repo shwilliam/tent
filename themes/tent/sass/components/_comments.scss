@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------
+# Comments styles 
+--------------------------------------------------------------*/
+
+.comments__list {
+  .comment:not(:first-child),
+  .children > li {
+    @include border-top;
+  }
+
+  padding-left: 0;
+
+  article {
+    display: flex;
+    padding: $base__space-unit/2 0;
+
+    cite {
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    time {
+      color: $color__text--muted;
+    }
+  }
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.comment-content {
+  padding-left: $base__space-unit;
+}
+
+.comments__label,
+.comments__input {
+  display: block;
+}
+
+.comments__label {
+  font-family: $font__title;
+  text-transform: uppercase;
+}
+
+.comments__input {
+  @include input;
+  margin: $base__space-unit/2 0 $base__space-unit 0;
+}

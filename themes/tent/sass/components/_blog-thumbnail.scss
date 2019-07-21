@@ -15,7 +15,7 @@
 }
 
 .blog-thumbnail__header {
-  @include border-top;
+  @include border-top--l;
 
   text-align: left;
   padding: 0 $base__space-unit / 2;

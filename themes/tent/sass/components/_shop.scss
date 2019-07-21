@@ -43,7 +43,7 @@
 }
 
 .shop__item-description {
-  @include border-top;
+  @include border-top--l;
 
   position: relative;
   display: flex;
