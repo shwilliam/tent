@@ -28,10 +28,11 @@
 }
 
 .site__header {
-  @include container;
+  @include border-bottom;
 }
 
 .site__header--above {
+  border-bottom: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -39,6 +40,8 @@
 }
 
 .site__header-nav {
+  @include container;
+
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -60,6 +63,10 @@
     color: $color__background-body;
   }
 
+  a:hover {
+    color: $color__link-hover--secondary;
+  }
+
   // menu items
   & > * * {
     padding: 0 0.5rem;
@@ -68,10 +75,12 @@
 }
 
 .site__header-nav--no-bg {
-  @include border-bottom;
-
   a {
-    color: $color__brand;
+    color: $color__link;
+  }
+
+  a:hover {
+    color: $color__link-hover;
   }
 }
 

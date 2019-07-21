@@ -5,9 +5,14 @@
 @mixin input {
   @include bordered;
 
-  width: 100%;
+  width: 50%;
   font-family: $font__main;
   background-color: $field__bg;
   line-height: 1.75;
   padding: $base__space-unit/4;
+}
+
+@mixin input-full {
+  @include input;
+  width: 100%;
 }

@@ -15,10 +15,12 @@
     @include button;
     @include button--secondary;
   }
+
+  textarea {
+    @include input-full;
+  }
 }
 
-.wpcf7-form-control {
-  &:not([type='submit']) {
-    @include input;
-  }
+.wpcf7-form-control:not([type="submit"]):not(textarea) {
+  @include input;
 }

@@ -15,7 +15,7 @@
     </header>
   <?php endif; ?>
 
-	<div class="entry__content container--small">
+	<div class="entry__content container-small">
 		<?php the_content(); ?>
 	</div>
 </article>

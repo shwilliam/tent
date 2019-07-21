@@ -33,23 +33,31 @@ get_header(); ?>
 
         <?php get_search_form(); ?>
 
-        <?php the_widget('WP_Widget_Recent_Posts'); ?>
+        <?php the_widget(
+          'WP_Widget_Recent_Posts',
+          array(),
+          array(
+            'before_widget' => '<div class="widget reset-list reset-list--no-pad"/>',
+            'before_title'  => '<h3 class="widget__title">',
+            'after_title'   => '</h3>',
+          )
+        ); ?>
 
         <?php if (tent_categorized_blog()) : ?>
         <div class="widget">
-          <h2 class="widget__title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
-          <ul>
-          <?php
-            wp_list_categories(
-              array(
-                'orderby'    => 'count',
-                'order'      => 'DESC',
-                'show_count' => 1,
-                'title_li'   => '',
-                'number'     => 10,
-              )
-            );
-          ?>
+          <h2 class="widget__title"><?php echo esc_html('Most Used Categories'); ?></h2>
+          <ul class="reset-list reset-list--no-pad">
+            <?php
+              wp_list_categories(
+                array(
+                  'orderby'    => 'count',
+                  'order'      => 'DESC',
+                  'show_count' => 1,
+                  'title_li'   => '',
+                  'number'     => 10,
+                )
+              );
+            ?>
           </ul>
         </div>
         <?php endif; ?>

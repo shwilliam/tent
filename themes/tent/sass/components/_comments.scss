@@ -44,6 +44,6 @@
 }
 
 .comments__input {
-  @include input;
+  @include input-full;
   margin: $base__space-unit/2 0 $base__space-unit 0;
 }

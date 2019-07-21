@@ -19,6 +19,14 @@
   @include reset-link;
 }
 
+.reset-list {
+  @include reset-list;
+}
+
+.reset-list--no-pad {
+  @include reset-list--no-pad;
+}
+
 .flex {
   display: flex;
 
