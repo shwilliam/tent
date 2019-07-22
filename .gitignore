@@ -11,6 +11,7 @@ plugins/*
 !plugins/tent-functionality/
 !plugins/tent-blocks/
 !plugins/tent-business-hours/
+!plugins/tent-contact/
 
 themes/*
 !themes/tent/

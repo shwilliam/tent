@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------
+# Contact info widget styles 
+--------------------------------------------------------------*/
+
+.contact-info__wrapper {
+  margin: $base__space-unit/2 0;
+}
+
+.contact-info__wrapper--link {
+  display: block;
+}
+
+.contact-info__icon {
+  color: $color__text-main;
+  width: 0;
+  flex-grow: 0;
+  line-height: 1.75;
+}
+
+.contact-info__content {
+  flex-grow: 1;
+  margin-left: $base__space-unit;
+}
