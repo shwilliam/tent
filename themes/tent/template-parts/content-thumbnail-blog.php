@@ -33,9 +33,6 @@
 
     <a class="button blog-thumbnail__action" href="<?= esc_url(get_permalink()); ?>">
       Read entry
-      <span class="button__icon" role="img" aria-label="">
-        &#8594;
-      </span>
     </a>
 	</header>
 </div>

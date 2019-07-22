@@ -1,0 +1,20 @@
+/*--------------------------------------------------------------
+# Search styles 
+--------------------------------------------------------------*/
+
+.search__pagination {
+  @include border-top;
+  padding-top: $base__space-unit;
+  padding-bottom: $base__space-unit * 2;
+
+  .page-numbers {
+    @include button;
+    @include button--secondary;
+
+    padding: $base__space-unit/4 $base__space-unit/2;
+
+    &.current {
+      background-color: $button--disabled;
+    }
+  }
+}

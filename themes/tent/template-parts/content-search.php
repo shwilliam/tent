@@ -7,18 +7,24 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('entry'); ?>>
 	<header class="entry__header">
-		<?php the_title( sprintf( '<h2 class="entry__title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry__meta">
-			<?php tent_posted_on(); ?> / <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?> / <?php tent_posted_by(); ?>
-		</div>
-		<?php endif; ?>
+    <h2 class="entry__title">
+      <a href="<?= esc_url(get_permalink()); ?>">
+        <?= the_title(); ?>
+      </a>
+    </h2>
 	</header>
 
-	<div class="entry-summary">
+	<div class="entry__content">
+
 		<?php the_excerpt(); ?>
+
+    <a class="button" href="<?= esc_url(get_permalink()); ?>">
+      Read more
+      <span class="button__icon" role="img" aria-label="">
+        &#8594;
+      </span>
+    </a>
 	</div>
 </article>

@@ -125,30 +125,30 @@
  	$GLOBALS['comment'] = $comment;
  	?>
 
- 	<li id="comment-<?php comment_ID(); ?>" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>>
- 		<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
+ 	<li id="comment-<?php comment_ID(); ?>__wrapper" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>>
+ 		<article id="comment-<?php comment_ID(); ?>" class="comments__body">
 
- 			<div class="comment-author-avatar">
+ 			<div class="comments__author-avatar">
  				<?php echo get_avatar( $comment, 64 ); ?>
  			</div>
 
- 			<div class="comment-content">
- 				<div class="comment-meta">
- 					<div class="comment-author vcard">
+ 			<div class="comments__content">
+ 				<div class="comments__meta">
+ 					<div class="comments__author vcard">
  						<?php printf( '<cite class="fn">%s</cite>', get_comment_author() ); ?>
- 					</div><!-- .comment-author -->
+ 					</div>
 
- 					<div class="comment-metadata">
+ 					<div class="comments__metadata">
  						<time datetime="<?php comment_time( 'c' ); ?>">
  								<?php printf( '%1$s', get_comment_date('d M Y \a\t g:i a') ); ?>
  						</time>
  						<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">#</a>
- 					</div><!-- .comment-metadata -->
+ 					</div>
 
  					<?php if ( '0' == $comment->comment_approved ) : ?>
- 					<p class="comment-awaiting-moderation">Your comment is awaiting moderation.</p>
+ 					<p class="comments__awaiting-moderation">Your comment is awaiting moderation.</p>
  					<?php endif; ?>
- 				</div><!-- .comment-meta -->
+ 				</div>
 
  				<?php comment_text(); ?>
 
@@ -159,10 +159,10 @@
  						'max_depth'  => $args['max_depth'],
  						'reply_text' => 'Reply &rarr;'
  					) ) ); ?>
- 				</div><!-- .reply -->
- 			</div><!-- .comment-content -->
+ 				</div>
+ 			</div>
 
- 		</article><!-- .comment-body -->
+ 		</article>
 
  	<?php
 
@@ -176,7 +176,7 @@
  	$big = 999999999;
 
  	if ( $wp_query->max_num_pages > 1 ) {
- 		echo '<nav role="navigation" class="search-pagination">';
+ 		echo '<nav role="navigation" class="search__pagination">';
  		echo paginate_links(
  			array(
  				'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
@@ -184,7 +184,7 @@
  				'current' => max( 1, get_query_var('paged') ),
  				'total' => $wp_query->max_num_pages,
  				'prev_text' => esc_html( '&larr; Previous' ),
- 				'next_text' => esc_html( 'Next &rarr;' ),
+				'next_text' => esc_html( 'Next &rarr;' ),
  			)
  		);
  		echo '</nav>';

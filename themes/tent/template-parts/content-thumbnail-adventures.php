@@ -26,9 +26,6 @@
 
     <a class="button button--tertiary" href="<?= esc_url(get_permalink()); ?>">
       Read more
-      <span class="button__icon" role="img" aria-label="">
-        &#8594;
-      </span>
     </a>
 	</header>
 </article>
