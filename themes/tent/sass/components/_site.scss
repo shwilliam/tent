@@ -113,3 +113,24 @@
   @include pad-between;
   flex-grow: 1;
 }
+
+.site__footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.site__footer-content {
+  @include container;
+  display: flex;
+  width: 100%;
+}
+
+.site__footer-bg {
+  @include fill-img;
+  z-index: -1;
+}
+
+.site__footer-logo-wrapper {
+  text-align: right;
+  flex-grow: 1;
+}

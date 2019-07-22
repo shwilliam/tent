@@ -81,6 +81,18 @@ class Tent_Contact_Info extends WP_Widget {
       empty($instance['address_2'])
         ? ''
         : apply_filters('address_2', $instance['address_2']);
+    $fb =
+      empty($instance['fb'])
+        ? ''
+        : apply_filters('fb', $instance['fb']);
+    $twitter =
+      empty($instance['twitter'])
+        ? ''
+        : apply_filters('twitter', $instance['twitter']);
+    $google =
+      empty($instance['google'])
+        ? ''
+        : apply_filters('google', $instance['google']);
 
 		ob_start();
 
@@ -112,6 +124,9 @@ class Tent_Contact_Info extends WP_Widget {
 		$instance['email'] = strip_tags($new_instance['email']);
 		$instance['address'] = strip_tags($new_instance['address']);
 		$instance['address_2'] = strip_tags($new_instance['address_2']);
+		$instance['fb'] = strip_tags($new_instance['fb']);
+		$instance['twitter'] = strip_tags($new_instance['twitter']);
+		$instance['google'] = strip_tags($new_instance['google']);
 
 		return $instance;
 	}
@@ -132,6 +147,9 @@ class Tent_Contact_Info extends WP_Widget {
         'email' => '',
         'address' => '',
         'address_2' => '',
+        'fb' => '',
+        'twitter' => '',
+        'google' => '',
 			)
 		);
 
@@ -140,6 +158,9 @@ class Tent_Contact_Info extends WP_Widget {
 		$email = strip_tags($instance['email']);
 		$address = strip_tags($instance['address']);
 		$address_2 = strip_tags($instance['address_2']);
+		$fb = strip_tags($instance['fb']);
+		$twitter = strip_tags($instance['twitter']);
+		$google = strip_tags($instance['google']);
 
 		include(plugin_dir_path( __FILE__ ).'views/admin.php');
 	}

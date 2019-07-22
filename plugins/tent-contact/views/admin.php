@@ -63,4 +63,46 @@
       value="<?= $address_2; ?>"
     >
   </p>
+
+  <p>
+    <label for="<?= $this->get_field_id('fb'); ?>">
+      Facebook:
+    </label>
+    
+    <input
+      class="widefat"
+      id="<?= $this->get_field_id('fb'); ?>"
+      name="<?= $this->get_field_name('fb'); ?>"
+      type="url"
+      value="<?= $fb; ?>"
+    >
+  </p>
+
+  <p>
+    <label for="<?= $this->get_field_id('twitter'); ?>">
+      Twitter:
+    </label>
+    
+    <input
+      class="widefat"
+      id="<?= $this->get_field_id('twitter'); ?>"
+      name="<?= $this->get_field_name('twitter'); ?>"
+      type="url"
+      value="<?= $twitter; ?>"
+    >
+  </p>
+
+  <p>
+    <label for="<?= $this->get_field_id('google'); ?>">
+      Google:
+    </label>
+    
+    <input
+      class="widefat"
+      id="<?= $this->get_field_id('google'); ?>"
+      name="<?= $this->get_field_name('google'); ?>"
+      type="url"
+      value="<?= $google; ?>"
+    >
+  </p>
 </div>

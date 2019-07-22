@@ -57,12 +57,21 @@ add_action( 'after_setup_theme', 'tent_content_width', 0 );
 function tent_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html( 'Sidebar' ),
-		'id'            => 'sidebar-1',
+		'id'            => 'sidebar__side',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget__title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget__title">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html( 'Footer' ),
+		'id'            => 'sidebar__footer',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget__title">',
+		'after_title'   => '</h3>',
 	) );
 }
 add_action( 'widgets_init', 'tent_widgets_init' );

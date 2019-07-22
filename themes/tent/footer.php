@@ -4,15 +4,33 @@
  *
  * @package tent
  */
-
 ?>
 
 		</div>
 
-		<footer class="site-footer" role="contentinfo">
-			<div class="site-footer__info">
-				<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-			</div>
+		<footer class="site__footer" role="contentinfo">
+      <div class="site__footer-content">
+        <?php dynamic_sidebar('sidebar__footer'); ?>
+
+        <div class="site__footer-logo-wrapper">
+          <img
+            alt="Inhabitent Camping Supply Co"
+            class="site__footer-logo"
+            src="<?= get_stylesheet_directory_uri().'/images/logo__text--white.svg'; ?>"
+          /> 
+        </div>
+      </div>
+      <img
+        class="site__footer-bg"
+        srcset="
+          <?=
+            get_stylesheet_directory_uri().'/images/bg__wood.png 1x,'
+            .get_stylesheet_directory_uri().'/images/bg__wood@2x.png 2x';
+          ?>
+        "
+        src="<?= get_stylesheet_directory_uri().'/images/bg__wood.png'; ?>"
+        alt=""
+      >
 		</footer>
 
 		<?php wp_footer(); ?>

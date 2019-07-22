@@ -34,3 +34,38 @@
     </span>
   </div>
 <?php endif; ?>
+
+<?php if (strlen(trim($fb)) > 0 || strlen(trim($twitter)) > 0 || strlen(trim($google)) > 0) : ?>
+  <div class="contact-info__social flex">
+    <?php if (strlen(trim($fb)) > 0) : ?>
+      <a
+        class="contact-info__social-item"
+        href="<?= $fb; ?>"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-facebook-square contact-info__icon" aria-label="Facebook"></i>
+      </a>
+    <?php endif; ?>
+    <?php if (strlen(trim($twitter)) > 0) : ?>
+      <a
+        class="contact-info__social-item"
+        href="<?= $twitter; ?>"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-twitter-square contact-info__icon" aria-label="Twitter"></i>
+      </a>
+    <?php endif; ?>
+    <?php if (strlen(trim($google)) > 0) : ?>
+      <a
+        class="contact-info__social-item"
+        href="<?= $google; ?>"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-google-plus-square contact-info__icon" aria-label="Google plus"></i>
+      </a>
+    <?php endif; ?>
+  </div>
+<?php endif; ?>

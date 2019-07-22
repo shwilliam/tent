@@ -5,11 +5,11 @@
  * @package tent
  */
 
-  if ( !is_active_sidebar('sidebar-1')) {
+  if (!is_active_sidebar('sidebar__side')) {
     return;
   }
 ?>
 
 <div class="sidebar" role="complementary">
-	<?php dynamic_sidebar('sidebar-1'); ?>
+	<?php dynamic_sidebar('sidebar__side'); ?>
 </div>
