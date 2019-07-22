@@ -34,7 +34,7 @@ class Tent_Biz_Hours extends WP_Widget {
 			$this->get_widget_slug(),
 			'Business hours',
 			array(
-				'classname'  => $this->get_widget_slug().'-class',
+				'classname'  => $this->get_widget_slug(),
 				'description' => 'Customizable business hours'
 			)
 		);

@@ -13,7 +13,9 @@
       <?= $monday_friday; ?>
     </time>
   </p>
+<?php endif; ?>
 
+<?php if (strlen(trim($saturday)) > 0) : ?>
   <p class="business-hours__wrapper">
     <span id="business-hours__sat" class="business-hours__label">
       Saturday:
@@ -26,8 +28,9 @@
       <?= $saturday; ?>
     </time>
   </p>
+<?php endif; ?>
 
-
+<?php if (strlen(trim($sunday)) > 0) : ?>
   <p class="business-hours__wrapper">
     <span id="business-hours__sun" class="business-hours__label">
       Sunday:
