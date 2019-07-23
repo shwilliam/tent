@@ -3,13 +3,17 @@
 --------------------------------------------------------------*/
 
 .sidebar {
-  @include pad-between;
+  @include border-top--dashed;
 
   flex-grow: 0;
   min-width: 300px;
-  padding-right: $base__space-unit * 2;
-  padding-top: $base__space-unit;
+  padding: $base__space-unit;
   border-left: 1px solid $color__border;
+
+  @include desktop {
+    padding: $base__space-unit $base__space-unit * 2 $base__space-unit * 2
+      $base__space-unit * 2;
+  }
 
   h1,
   h2,
@@ -27,5 +31,10 @@
   li {
     padding-left: 0;
     list-style-type: none;
+  }
+
+  @include desktop {
+    @include pad-between;
+    border-top: none;
   }
 }

@@ -47,7 +47,7 @@
 
 .entry__title--float {
   position: absolute;
-  top: $base__space-unit;
+  top: $base__space-unit/8;
   width: 70%;
   padding: $base__space-unit/2;
   background-color: $color__brand;
@@ -56,6 +56,10 @@
   a {
     color: $color__background-body;
     text-decoration: none;
+  }
+
+  @include desktop {
+    top: $base__space-unit;
   }
 }
 
@@ -72,6 +76,14 @@
     @include title;
     text-align: center;
   }
+
+  > * {
+    padding: 0 $base__space-unit;
+
+    @include desktop {
+      padding: 0;
+    }
+  }
 }
 
 .entry__content--left {
@@ -86,22 +98,31 @@
 }
 
 .entry__meta--float {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: $base__space-unit/2;
   background-color: $color__brand;
+  padding: $base__space-unit/2;
 
   &,
   a {
     color: $color__background-body;
   }
+
+  @include tablet {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .entry__footer {
+  padding: 0 $base__space-unit;
+
   * {
     font-family: $font__title;
     text-transform: uppercase;
+  }
+
+  @include desktop {
+    padding: 0;
   }
 }
 
@@ -117,9 +138,22 @@
   }
 }
 
+.entry__action {
+  padding: 0 $base__space-unit;
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
 .entry__actions {
   max-width: 250px;
   display: flex;
   justify-content: space-between;
   padding: $base__space-unit 0;
+  margin: 0 auto;
+
+  @include tablet {
+    margin: 0;
+  }
 }

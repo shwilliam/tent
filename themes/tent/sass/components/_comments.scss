@@ -2,6 +2,14 @@
 # Comments styles 
 --------------------------------------------------------------*/
 
+.comments {
+  padding: 0 $base__space-unit;
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
 .comments__list {
   .comment:not(:first-child),
   .children > li {

@@ -4,13 +4,18 @@
 
 .site {
   @include container;
-
+  min-width: 400px;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
 
-  & > * {
-    flex-grow: 1;
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    & > * {
+      flex-grow: 1;
+    }
   }
 }
 
@@ -110,8 +115,11 @@
 }
 
 .site__main {
-  @include pad-between;
   flex-grow: 1;
+
+  @include desktop {
+    @include pad-between;
+  }
 }
 
 .site__footer {
@@ -131,6 +139,20 @@
 }
 
 .site__footer-logo-wrapper {
-  text-align: right;
   flex-grow: 1;
+  text-align: center;
+  padding: $base__space-unit;
+
+  @include desktop {
+    text-align: right;
+  }
+}
+
+.site__footer-sidebar {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    flex-grow: 1;
+  }
 }

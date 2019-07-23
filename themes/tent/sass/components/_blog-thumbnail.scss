@@ -2,15 +2,29 @@
 # Blog post thumbnail styles 
 --------------------------------------------------------------*/
 
+.blog-thumbnail__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+  }
+}
+
 .blog-thumbnail {
   @include bordered;
+  width: 100%;
 
-  &:not(:last-child) {
-    margin-right: $base__space-unit / 2;
-  }
+  @include tablet {
+    width: 33%;
 
-  &:not(:first-child) {
-    margin-left: $base__space-unit / 2;
+    &:not(:last-child) {
+      margin-right: $base__space-unit / 2;
+    }
+
+    &:not(:first-child) {
+      margin-left: $base__space-unit / 2;
+    }
   }
 }
 

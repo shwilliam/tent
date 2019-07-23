@@ -7,7 +7,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('flex--split'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('shop__item-wrapper'); ?>>
 	<header class="entry__header">
 		<?php if (has_post_thumbnail()) : ?>
       <?php
@@ -19,7 +19,7 @@
 		<?php endif; ?>
 	</header>
 
-	<div class="entry__content entry__content--left">
+	<div class="entry__content entry__content--left shop__item-content">
     <h2 class="entry__title entry__title--secondary">
       <?= the_title(); ?>
     </h2>

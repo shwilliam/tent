@@ -2,6 +2,21 @@
 # Shop thumbnail styles 
 --------------------------------------------------------------*/
 
+.shop-thumbnail__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: $base__space-unit;
+  }
+}
+
 .shop-thumbnail {
   @include bordered;
   @include border-top--l;
@@ -9,19 +24,16 @@
   &:hover {
     border-color: $color__secondary;
   }
-
-  &:not(:last-child) {
-    margin-right: $base__space-unit / 2;
-  }
-
-  &:not(:first-child) {
-    margin-left: $base__space-unit / 2;
-  }
 }
 
 .shop-thumbnail__content {
   text-align: center;
-  padding: 0 $base__space-unit / 2;
+  height: 100px;
+  padding: 0 $base__space-unit;
+
+  @include desktop {
+    padding: 0 $base__space-unit / 2;
+  }
 }
 
 .shop-thumbnail__icon {

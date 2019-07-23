@@ -10,7 +10,7 @@ get_header(); ?>
   <main class="site__main">
 
     <?php while (have_posts()) : the_post(); ?>
-      <?php get_template_part('template-parts/content', 'page'); ?>
+      <?php get_template_part('template-parts/content', 'front-page'); ?>
     <?php endwhile; ?>
 
     <section class="page__section">
@@ -18,7 +18,7 @@ get_header(); ?>
         Shop Stuff
       </h2>
 
-      <div class="flex">
+      <div class="shop-thumbnail__grid">
         <?php
           $product_types_terms = get_terms(array(
             'taxonomy' => 'product-type',
@@ -49,7 +49,7 @@ get_header(); ?>
         Inhabitent Journal
       </h2>
 
-      <div class="flex">
+      <div class="blog-thumbnail__wrapper">
         <?php
           $blog_posts = get_posts(array(
             'post_type' => 'post',

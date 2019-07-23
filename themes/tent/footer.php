@@ -10,7 +10,9 @@
 
 		<footer class="site__footer" role="contentinfo">
       <div class="site__footer-content">
-        <?php dynamic_sidebar('sidebar__footer'); ?>
+        <div class="site__footer-sidebar">
+          <?php dynamic_sidebar('sidebar__footer'); ?>
+        </div>
 
         <div class="site__footer-logo-wrapper">
           <img

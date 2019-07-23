@@ -4,6 +4,10 @@
 
 .shop {
   text-align: center;
+  padding: 0 $base__space-unit;
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .shop__terms {
@@ -17,15 +21,27 @@
   justify-content: space-around;
 }
 
+.shop__description {
+  padding: 0 $base__space-unit;
+}
+
 .shop__grid {
   @include border-top--dashed;
 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   grid-column-gap: $base__space-unit;
   grid-row-gap: $base__space-unit;
   padding: $base__space-unit 0;
   margin-top: 2 * $base__space-unit;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .shop__item {
@@ -33,13 +49,35 @@
   overflow: hidden;
 }
 
+.shop__item-wrapper {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+
+    & > * {
+      width: 47.5%;
+    }
+  }
+}
+
 .shop__item-img-wrapper {
   position: relative;
   height: 250px;
+  overflow: hidden;
 }
 
 .shop__item-img {
   @include fill-img;
+}
+
+.shop__item-content {
+  padding: 0 $base__space-unit/2;
+
+  @include tablet {
+    > * {
+      padding: 0;
+    }
+  }
 }
 
 .shop__item-description {
@@ -48,7 +86,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: $base__space-unit/2;
+  padding: $base__space-unit/2 0;
 }
 
 .shop__item-title {
@@ -58,7 +96,7 @@
   white-space: nowrap;
 
   &:before {
-    content: ".................................................";
+    content: "...........................................................................................................................................................................";
     position: absolute;
     z-index: -1;
   }
@@ -67,6 +105,7 @@
 .shop__item-title,
 .shop__item-price {
   background-color: $color__background-body;
+  padding: 0 $base__space-unit/4;
 }
 
 .shop__item-link {
@@ -79,4 +118,9 @@
 .shop__item-price--large {
   @include title;
   @include font-size(1.75);
+  padding: 0 $base__space-unit;
+
+  @include tablet {
+    padding: 0;
+  }
 }

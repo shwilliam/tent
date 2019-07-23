@@ -16,6 +16,7 @@
   @include title;
   @include font-size(0.75);
 
+  display: inline-block;
   padding: $base__space-unit/2;
   border: 1px solid $button--primary;
   color: $button--primary;

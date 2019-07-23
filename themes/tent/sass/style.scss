@@ -15,6 +15,7 @@ Tags:
 ----------------------------------------------------------------
 # Variables
 # Mixins
+# Breakpoints
 # Reset
 # Embedded Fonts
 # Typography
@@ -24,6 +25,7 @@ Tags:
 --------------------------------------------------------------*/
 
 @import "variables";
+@import "breakpoints";
 @import "mixins";
 
 @import "reset";
@@ -35,8 +37,8 @@ Tags:
 
 @import "components/site";
 @import "components/page";
-@import "components/shop";
 @import "components/entry";
+@import "components/shop";
 @import "components/button";
 @import "components/input";
 @import "components/sidebar";
