@@ -1,7 +1,7 @@
 <!-- public view -->
 
 <?php if ($tel) : ?>
-  <a class="contact-info__wrapper contact-info__wrapper--link" href="<?= $tel; ?>">
+  <a class="contact-info__wrapper contact-info__wrapper--link" href="tel:<?= $tel; ?>">
     <i class="fa fa-phone contact-info__icon" aria-label="Phone"></i>
 
     <span class="contact-info__content">
@@ -11,7 +11,7 @@
 <?php endif; ?>
 
 <?php if (strlen(trim($email)) > 0) : ?>
-  <a class="contact-info__wrapper contact-info__wrapper--link" href="<?= $email; ?>">
+  <a class="contact-info__wrapper contact-info__wrapper--link" href="mailto:<?= $email; ?>">
     <i class="fa fa-envelope contact-info__icon" aria-label="Email"></i>
 
     <span class="contact-info__content">
