@@ -4,8 +4,11 @@
 
 .page__title {
   @include title;
-  @include font-size(1.75);
-  padding-top: $base__space-unit;
+  padding: $base__space-unit/2 $base__space-unit 0 $base__space-unit;
+
+  @include desktop {
+    padding-left: 0;
+  }
 }
 
 .page__header--underline {

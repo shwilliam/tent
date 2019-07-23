@@ -41,6 +41,10 @@
 
   &.search-form--dark {
     color: $color__brand;
+
+    .search-form__icon:hover {
+      color: $color__link-hover;
+    }
   }
 
   .search-form__icon {

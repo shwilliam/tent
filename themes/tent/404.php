@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-  <main class="site__main">
+  <main class="site__main site__main--padded">
 
     <section class="error-404 not-found">
       <header class="page__header">

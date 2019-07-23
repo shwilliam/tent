@@ -92,7 +92,7 @@
 }
 
 .site__header-logo {
-  height: 1.4 * $base__space-unit;
+  height: 1.75 * $base__space-unit;
   min-width: 2.3 * $base__space-unit;
 }
 
@@ -124,6 +124,10 @@
   @include desktop {
     @include pad-between;
   }
+}
+
+.site__main--padded {
+  padding: 0 $base__space-unit $base__space-unit $base__space-unit;
 }
 
 .site__footer {

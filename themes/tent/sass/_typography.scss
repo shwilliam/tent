@@ -11,7 +11,7 @@ body {
 }
 
 @mixin title {
-  @include font-size(2);
+  @include font-size(2.4);
 
   font-family: $font__title;
   text-transform: uppercase;

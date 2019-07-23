@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 .entry__header {
-  margin-top: $base__space-unit;
+  margin-top: $base__space-unit * 1.5;
 }
 
 .entry__header--float {
@@ -19,6 +19,7 @@
 
 .entry__title {
   @include title;
+  padding-top: $base__space-unit/2;
 }
 
 .entry__title--small {
