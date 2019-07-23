@@ -99,6 +99,8 @@
 }
 
 .entry__meta--float {
+  font-family: $font__title;
+  text-transform: uppercase;
   background-color: $color__brand;
   padding: $base__space-unit/2;
 
