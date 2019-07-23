@@ -33,6 +33,7 @@
         src="<?= get_stylesheet_directory_uri().'/images/bg__wood.png'; ?>"
         alt=""
       >
+      <p class="site__footer-copyright">Copyright © 2019 Inhabitent</p>
 		</footer>
 
 		<?php wp_footer(); ?>

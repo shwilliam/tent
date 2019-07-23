@@ -5,6 +5,7 @@
 .page__title {
   @include title;
   @include font-size(1.75);
+  padding-top: $base__space-unit;
 }
 
 .page__header--underline {

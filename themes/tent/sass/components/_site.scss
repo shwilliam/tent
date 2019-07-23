@@ -118,6 +118,8 @@
 
 .site__main {
   flex-grow: 1;
+  min-height: calc(100vh - $footer-height);
+  margin-bottom: 2 * $base__space-unit;
 
   @include desktop {
     @include pad-between;
@@ -127,12 +129,44 @@
 .site__footer {
   position: relative;
   overflow: hidden;
+  height: $footer-height;
+  padding: $base__space-unit * 2 $base__space-unit $base__space-unit
+    $base__space-unit;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color__secondary;
+  }
+
+  &,
+  a,
+  i {
+    color: $color__background-body;
+  }
+
+  a:hover .contact-info__content {
+    text-decoration: underline;
+  }
+
+  @include desktop {
+    height: unset;
+  }
 }
 
 .site__footer-content {
   @include container;
   display: flex;
   width: 100%;
+}
+
+.site__footer-sidebar {
+  > * {
+    margin-right: $base__space-unit * 2;
+  }
 }
 
 .site__footer-bg {
@@ -149,6 +183,9 @@
     text-align: right;
   }
 }
+.site__footer-logo {
+  height: 50px;
+}
 
 .site__footer-sidebar {
   display: none;
@@ -157,4 +194,12 @@
     display: flex;
     flex-grow: 1;
   }
+}
+
+.site__footer-copyright {
+  text-align: center;
+  font-family: $font__title;
+  text-transform: uppercase;
+  margin-top: $base__space-unit * 2;
+  margin-bottom: $base__space-unit;
 }

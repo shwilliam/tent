@@ -13,8 +13,11 @@
 .contact-info__icon {
   color: $color__text-main;
   width: 0;
-  flex-grow: 0;
   line-height: 1.75;
+}
+
+.contact-info__social {
+  width: 80px;
 }
 
 .contact-info__content {
