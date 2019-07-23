@@ -86,7 +86,7 @@ if (post_password_required()) {
         )
         .'<input class="comments__input" id="author" name="author" type="text" value="'
         .esc_attr($commenter['comment_author'])
-        .'" size="30"'.$aria_req.'/></label>',
+        .'" size="30" required/></label>',
 
       'email' =>
         '<label class="comments__label" for="email">'
@@ -97,9 +97,7 @@ if (post_password_required()) {
         )
         .'<input class="comments__input" id="email" name="email" type="text" value="'
         .esc_attr($commenter['comment_author_email'])
-        .'" size="30"'
-        .$aria_req
-        .'/></div></label>',
+        .'" size="30" required/></div></label>',
 
       'url' =>
         '<label class="comments__label" for="url">'
