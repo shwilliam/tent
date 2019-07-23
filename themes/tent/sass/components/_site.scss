@@ -2,9 +2,12 @@
 # Site-wide styles 
 --------------------------------------------------------------*/
 
+body {
+  min-width: 300px;
+}
+
 .site {
   @include container;
-  min-width: 400px;
   display: flex;
   flex-direction: column;
 
@@ -50,34 +53,30 @@
 
   position: relative;
   display: flex;
-  white-space: nowrap;
   justify-content: space-between;
   align-items: center;
   font-family: $font__title;
   line-height: $font__line-height-body;
   z-index: 9999;
-
-  ul {
-    display: none;
-  }
-
+  
   li {
     position: relative;
     display: inline-block;
   }
-
+  
   a {
     color: $color__background-body;
   }
-
+  
   a:hover {
     color: $color__link-hover--secondary;
   }
-
+  
   // menu items
   & > * * {
     padding: $base__space-unit/6 0.5rem;
     text-transform: uppercase;
+    flex-basis: unset;
   }
 }
 
@@ -100,20 +99,9 @@
   @include sr-only;
 }
 
-/* collapsed */
-.site__header-nav.toggled ul {
+.site__header-nav ul {
   display: unset;
-}
-
-// TODO: refactor breakpoints to use mixin
-@media screen and (min-width: 768px) {
-  .site__header-nav--closed {
-    display: none;
-  }
-
-  .site__header-nav ul {
-    display: unset;
-  }
+  overflow-x: scroll;
 }
 
 .site__main {
@@ -132,6 +120,7 @@
 
 .site__footer {
   position: relative;
+  min-width: 100%;
   overflow: hidden;
   height: $footer-height;
   padding: $base__space-unit * 2 $base__space-unit $base__space-unit

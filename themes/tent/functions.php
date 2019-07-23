@@ -94,7 +94,6 @@ add_filter( 'stylesheet_uri', 'tent_minified_css', 10, 2 );
 function tent_scripts() {
 	wp_enqueue_style( 'tent-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'tent-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'tent-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
