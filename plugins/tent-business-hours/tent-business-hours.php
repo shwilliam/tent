@@ -11,9 +11,9 @@
  * @copyright 2019 William L 
  *
  * @wordpress-plugin
- * Plugin Name:       tent business hours
+ * Plugin Name:       Tent Business Hours
  * Plugin URI:        https://github.com/shwilliam/tent
- * Description:       customizable business hours 
+ * Description:       Customizable business hours 
  * Version:           0.1.0
  * Author:            William L <w-lindvall@outlook.com>
  * Author URI:        https://github.com/shwilliam 

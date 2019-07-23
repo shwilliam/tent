@@ -11,9 +11,9 @@
  * @copyright 2019 William L 
  *
  * @wordpress-plugin
- * Plugin Name:       tent contact info 
+ * Plugin Name:       Tent Contact Info 
  * Plugin URI:        https://github.com/shwilliam/tent
- * Description:       customizable contact info 
+ * Description:       Customizable contact info 
  * Version:           0.1.0
  * Author:            William L <w-lindvall@outlook.com>
  * Author URI:        https://github.com/shwilliam 

@@ -1,14 +1,14 @@
 <?php
  /**
  *
- * @package   tent functionality
+ * @package   Tent Functionality
  * @author    William L <w-lindvall@outlook.com>
  * @license   GPL-2.0
  * @copyright 2019 William L 
  *
  * @wordpress-plugin
- * Plugin Name: tent functionality
- * Description: theme-independent functionality
+ * Plugin Name: Tent Functionality
+ * Description: Theme-independent functionality
  * Version:     0.1.0
  * Author:      William L 
  * License:     GPL-2.0
