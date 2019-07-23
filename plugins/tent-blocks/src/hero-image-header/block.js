@@ -144,7 +144,7 @@ class HeroImageHeader {
           <div
             className={className}
             style={{
-              background: `linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url(${heroImage.media_details.sizes.large.source_url}) no-repeat center bottom`,
+              background: `linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url(${heroImage.media_details.sizes.large.source_url}) no-repeat center center`,
               backgroundSize: 'cover, cover',
             }}
           >
