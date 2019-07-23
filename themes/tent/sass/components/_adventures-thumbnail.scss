@@ -47,7 +47,9 @@
   .entry__title {
     @include font-size(2);
   }
+}
 
+.adventures-thumbnail--small {
   @include tablet {
     .entry__title {
       @include font-size(1.5);

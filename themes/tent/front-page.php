@@ -80,7 +80,7 @@ get_header(); ?>
 
           foreach ($adventure_posts as $post) : setup_postdata($post);
 
-            get_template_part('template-parts/content', 'thumbnail-adventures');
+            get_template_part('template-parts/content', 'thumbnail-adventures--small');
 
           endforeach; wp_reset_postdata();
         ?>
