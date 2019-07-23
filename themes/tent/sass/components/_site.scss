@@ -13,7 +13,7 @@
     justify-content: space-between;
     width: 100%;
 
-    & > * {
+    > * {
       flex-grow: 1;
     }
   }
@@ -27,7 +27,8 @@
     @include container;
   }
 
-  .page__title {
+  .page__title,
+  .search-form__expanding-wrap {
     color: $color__background-body;
   }
 }
@@ -49,10 +50,11 @@
 
   position: relative;
   display: flex;
+  white-space: nowrap;
   justify-content: space-between;
   align-items: center;
   font-family: $font__title;
-  line-height: $base__space-unit;
+  line-height: $font__line-height-body;
   z-index: 9999;
 
   ul {
@@ -74,7 +76,7 @@
 
   // menu items
   & > * * {
-    padding: 0 0.5rem;
+    padding: $base__space-unit/6 0.5rem;
     text-transform: uppercase;
   }
 }

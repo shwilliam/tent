@@ -18,3 +18,56 @@
     }
   }
 }
+
+.search-form__icon {
+  display: none;
+}
+
+// toggleable search
+.search-form__field {
+  box-shadow: none;
+  outline: none;
+}
+
+.search-form__expanding-wrap {
+  color: $color__background-body;
+
+  &,
+  .search-form,
+  .search-form__label {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &.search-form--dark {
+    color: $color__brand;
+  }
+
+  .search-form__icon {
+    display: initial;
+    cursor: pointer;
+    color: inherit;
+    line-height: 1;
+    padding: 0 $base__space-unit;
+
+    &:hover {
+      color: $color__link-hover--secondary;
+    }
+  }
+
+  .search-form__field {
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    line-height: 1;
+    width: 200px;
+    transition: all $transition-dur ease-in-out;
+  }
+
+  // close on blur if empty
+  .search-form__field:not(:focus):not(:valid) {
+    width: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

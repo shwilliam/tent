@@ -58,14 +58,26 @@
             ?>"
           />
         </a>
-        <button
-          class="site__header-nav--closed"
-          aria-controls="primary-menu"
-          aria-expanded="false"
-        >
-          <?php echo esc_html('menu'); ?>
-        </button>
-        <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+
+				<div class="flex">
+					<button
+						class="site__header-nav--closed"
+						aria-controls="primary-menu"
+						aria-expanded="false"
+					>
+						<?php echo esc_html('menu'); ?>
+					</button>
+					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+
+					<div class="search-form__expanding-wrap
+            <?= has_block('tent/hero-image-header')
+              ? ''
+              : 'search-form--dark';
+            ?>
+          ">
+						<?php get_search_form(); ?>
+					</div>
+				</div>
       </nav>
     </header>
 
