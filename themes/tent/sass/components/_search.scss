@@ -32,6 +32,10 @@
 .search-form__expanding-wrap {
   color: $color__background-body;
 
+  .search-form {
+    white-space: nowrap;
+  }
+
   &,
   .search-form,
   .search-form__label {
