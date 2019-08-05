@@ -24,7 +24,7 @@ This project implements the following design mockups:
 - Custom Gutenberg block for fullscreen image
 - Customizable business hours & contact info widget
 - An alternative blog-style post type
-- Post-type for products w/ a custom taxonomy 
+- Post-type for products w/ a custom taxonomy
 - Styled w/ SASS using the SCSS (Sassy CSS) syntax
 - Easy-to-use contact form w/ Contact Form 7
 
@@ -41,3 +41,7 @@ Run `npm i` inside the theme directory to install the node modules you'll need f
 ### 3. Update the proxy in `gulpfile.js`
 
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL)
+
+### 4. (Optional) Populate SQL DB with sample posts
+
+To get an idea of the content that this theme/plugin collection supports, you may wish to import some sample posts. This can be done by [downloading `tent.sql`](https://gist.github.com/shwilliam/612f04ed3a897c38d24f146e7bba654e) and importing the SQL file from `phpmyadmin`.
