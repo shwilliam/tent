@@ -26,7 +26,7 @@ get_header(); ?>
           ));
 
           foreach ($product_types_terms as $term) :
-            $term_name = $term->name;
+            $term_name = strtolower($term->name);
             $term_description = $term->description;
             $term_url = get_term_link($term);
             $term_icon_url =
