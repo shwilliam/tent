@@ -10,7 +10,7 @@
 <div id="shop-thumbnail-<?= $term_name; ?>" class="shop-thumbnail">
   <a class="reset-link" href="<?= esc_url($term_url); ?>">
     <header>
-      <img class="shop-thumbnail__icon" src="<?= $term_icon_url; ?>" />
+      <img class="shop-thumbnail__icon" src="<?= $term_icon_url; ?>" alt="" />
 
       <h3 class="screen-reader-text">
         <?= $term_name; ?> products

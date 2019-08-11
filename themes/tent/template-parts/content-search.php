@@ -22,7 +22,7 @@
 
     <a class="button" href="<?= esc_url(get_permalink()); ?>">
       Read more
-      <span class="button__icon" role="img" aria-label="">
+      <span class="button__icon" role="img" alt="" aria-label="">
         &#8594;
       </span>
     </a>
