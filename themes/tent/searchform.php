@@ -1,5 +1,5 @@
 <form role="search" method="get" class="search-form" action="<?php echo home_url('/'); ?>">
-	<fieldset class="search-form__fieldset">
+  <fieldset class="search-form__fieldset">
     <label class="search-form__label">
       <i class="fa fa-search search-form__icon" aria-hidden="true"></i>
       <input
@@ -12,5 +12,5 @@
         required
       />
     </label>
-	</fieldset>
+  </fieldset>
 </form>

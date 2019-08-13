@@ -7,17 +7,17 @@
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-	<head>
-		<meta charset="<?php bloginfo('charset'); ?>">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="profile" href="http://gmpg.org/xfn/11">
-		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+  <head>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <meta name="description" content="<?php bloginfo('description'); ?>"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-	<?php wp_head(); ?>
-	</head>
+  <?php wp_head(); ?>
+  </head>
 
-	<body <?php body_class(); ?>>
+  <body <?php body_class(); ?>>
     <a class="skip-link screen-reader-text" href="#content">
       <?php echo esc_html('Skip to content'); ?>
     </a>
@@ -59,18 +59,18 @@
           />
         </a>
 
-				<div class="flex">
-					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+        <div class="flex">
+          <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
 
-					<div class="search-form__expanding-wrap
+          <div class="search-form__expanding-wrap
             <?= has_block('tent/hero-image-header')
               ? ''
               : 'search-form--dark';
             ?>
           ">
-						<?php get_search_form(); ?>
-					</div>
-				</div>
+            <?php get_search_form(); ?>
+          </div>
+        </div>
       </nav>
     </header>
 

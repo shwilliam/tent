@@ -8,17 +8,17 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('entry'); ?>>
-	<header class="entry__header">
+  <header class="entry__header">
     <h2 class="entry__title">
       <a href="<?= esc_url(get_permalink()); ?>">
         <?= the_title(); ?>
       </a>
     </h2>
-	</header>
+  </header>
 
-	<div class="entry__content">
+  <div class="entry__content">
 
-		<?php the_excerpt(); ?>
+    <?php the_excerpt(); ?>
 
     <a class="button" href="<?= esc_url(get_permalink()); ?>">
       Read more
@@ -26,5 +26,5 @@
         &#8594;
       </span>
     </a>
-	</div>
+  </div>
 </article>

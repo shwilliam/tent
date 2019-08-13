@@ -8,18 +8,18 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('shop__item-wrapper'); ?>>
-	<header class="entry__header">
-		<?php if (has_post_thumbnail()) : ?>
+  <header class="entry__header">
+    <?php if (has_post_thumbnail()) : ?>
       <?php
         the_post_thumbnail(
           'large',
           ['class' => 'entry__header-img']
         );
       ?>
-		<?php endif; ?>
-	</header>
+    <?php endif; ?>
+  </header>
 
-	<div class="entry__content entry__content--left shop__item-content">
+  <div class="entry__content entry__content--left shop__item-content">
     <h2 class="entry__title entry__title--secondary">
       <?= the_title(); ?>
     </h2>
@@ -33,8 +33,8 @@
       ?>
     </span>
 
-		<?php the_content(); ?>
+    <?php the_content(); ?>
 
     <?php get_template_part('template-parts/component', 'social-links'); ?>
-	</div>
+  </div>
 </article>

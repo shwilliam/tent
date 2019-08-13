@@ -8,15 +8,15 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry__header entry__header--float">
-		<?php if (has_post_thumbnail()) : ?>
+  <header class="entry__header entry__header--float">
+    <?php if (has_post_thumbnail()) : ?>
       <?php
         the_post_thumbnail(
           'large',
           ['class' => 'entry__header-img entry__header-img--fill']
         );
       ?>
-		<?php endif; ?>
+    <?php endif; ?>
 
     <?php
       the_title(
@@ -28,17 +28,17 @@
       );
     ?>
 
-		<?php if ('post' === get_post_type()) : ?>
+    <?php if ('post' === get_post_type()) : ?>
       <div class="entry__meta entry__meta--float">
         <?php tent_posted_on(); ?> /
         <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?> /
         <?php tent_posted_by(); ?>
       </div>
-		<?php endif; ?>
-	</header>
+    <?php endif; ?>
+  </header>
 
-	<div class="entry__content">
-		<?php the_excerpt(); ?>
+  <div class="entry__content">
+    <?php the_excerpt(); ?>
 
 
     <div class="entry__action">

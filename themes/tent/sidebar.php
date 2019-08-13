@@ -11,5 +11,5 @@
 ?>
 
 <div class="sidebar" role="complementary">
-	<?php dynamic_sidebar('sidebar__side'); ?>
+  <?php dynamic_sidebar('sidebar__side'); ?>
 </div>

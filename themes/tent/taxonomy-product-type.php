@@ -7,8 +7,8 @@
 
 get_header(); ?>
 
-	<div class="shop">
-		<main class="site__main">
+  <div class="shop">
+    <main class="site__main">
 
       <header class="page__header">
 
@@ -46,7 +46,7 @@ get_header(); ?>
 
         <?php endif; ?>
 
-		</main>
-	</div>
+    </main>
+  </div>
 
 <?php get_footer(); ?>

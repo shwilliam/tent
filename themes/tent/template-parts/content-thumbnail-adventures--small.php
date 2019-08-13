@@ -17,7 +17,7 @@
     ?>
   <?php endif; ?>
 
-	<header class="adventures-thumbnail__header">
+  <header class="adventures-thumbnail__header">
     <h3 class="entry__title entry__title--serif">
       <a class="adventures-thumbnail__link" href="<?= esc_url(get_permalink()); ?>">
         <?= the_title(); ?>
@@ -27,5 +27,5 @@
     <a class="button button--tertiary" href="<?= esc_url(get_permalink()); ?>">
       Read more
     </a>
-	</header>
+  </header>
 </article>

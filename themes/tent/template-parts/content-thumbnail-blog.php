@@ -19,7 +19,7 @@
     <?php endif; ?>
   </div>
 
-	<header class="blog-thumbnail__header">
+  <header class="blog-thumbnail__header">
     <div class="blog-thumbnail__meta">
       <?php tent_posted_on(); ?> /
       <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?>
@@ -34,5 +34,5 @@
     <a class="button blog-thumbnail__action" href="<?= esc_url(get_permalink()); ?>">
       Read entry
     </a>
-	</header>
+  </header>
 </div>

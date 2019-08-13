@@ -15,13 +15,14 @@
     </header>
   <?php endif; ?>
 
-	<div class="entry__content entry__content--left">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages(array(
-				'before' => '<div class="page-links">'.esc_html('Pages:'),
-				'after'  => '</div>',
-			));
-		?>
-	</div>
+  <div class="entry__content entry__content--left">
+    <?php the_content(); ?>
+    <?php
+      wp_link_pages(array(
+        'before' => '<div class="page-links">'.esc_html('Pages:'),
+        'after'  => '</div>',
+      ));
+    ?>
+  </div>
+
 </article>

@@ -6,9 +6,9 @@
  */
 ?>
 
-		</div>
+    </div>
 
-		<footer class="site__footer" role="contentinfo">
+    <footer class="site__footer" role="contentinfo">
       <div class="site__footer-content">
         <div class="site__footer-sidebar">
           <?php dynamic_sidebar('sidebar__footer'); ?>
@@ -34,9 +34,9 @@
         alt=""
       >
       <p class="site__footer-copyright">Copyright © 2019 Inhabitent</p>
-		</footer>
+    </footer>
 
-		<?php wp_footer(); ?>
+    <?php wp_footer(); ?>
 
-	</body>
+  </body>
 </html>
