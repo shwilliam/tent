@@ -44,4 +44,4 @@ Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Br
 
 ### 4. (Optional) Populate SQL DB with sample posts
 
-To get an idea of the content that this theme/plugin collection supports, you may wish to import some sample posts. This can be done by [downloading `tent.sql`](https://gist.github.com/shwilliam/612f04ed3a897c38d24f146e7bba654e) and importing the SQL file from `phpmyadmin`.
+To get an idea of the content that this theme/plugin collection supports, you may wish to import some sample posts. This can be done by [downloading `tent.sql`](https://gist.github.com/shwilliam/612f04ed3a897c38d24f146e7bba654e) and importing the SQL file from `phpmyadmin`. Note that this uses the URL `//localhost/inhabitent` and site path `Applications/htdocs/inhabitent` so you must either mimic these or run your own find & replace to match your appropriate system paths.
