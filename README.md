@@ -2,6 +2,8 @@
 
 > A camping-inspired WP theme and plugin collection
 
+<img src="https://user-images.githubusercontent.com/38357771/63648215-39bade80-c6e1-11e9-9a08-599f754bcef9.gif" alt="Theme screengrab" width="720"/>
+
 ## Design
 
 This project implements the following design mockups:
